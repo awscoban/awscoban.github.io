@@ -28,7 +28,7 @@ disqus_shortname: cuong
 paginate: 10
 paginate_path: "/page:num/"
 
-# `gems: [jekyll-paginate]`
+plugins: [jekyll-paginate]
 
 gems:
   - jekyll-sitemap
