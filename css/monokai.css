@@ -24,9 +24,10 @@
   font-weight: bold;
   font-style: italic;
 }
-.highlight .err {
-  color: #960050;
-  background-color: #1e0010;
+.highlight .err { /* json comment  */
+  /* color: #960050; */
+  color: #32969f; 
+  /* background-color: #1e0010; */
 }
 .highlight .gi {
   color: #ffffff;
