@@ -3,7 +3,7 @@ layout: post
 title: "1. Tài khoản AWS"
 title2: "Tài khoản AWS"
 date: 2025-11-06
-permalink: 2025/11/06/aws-account
+permalink: /2025/11/06/aws-account
 img: /assets/1_taikhoanaws/overview.png
 categories: [Account & Organization]
 tags: [account, organization]
