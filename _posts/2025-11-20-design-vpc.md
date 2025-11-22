@@ -22,7 +22,7 @@ VPC Mặc định được AWS cấu hình sẵn để người dùng nhanh chó
     - [2.1. Cấu trúc đa tầng](#multi-tier)
     - [2.2. Cấu trúc đa vùng, đa giai đoạn](#multi-region-acc)
     - [2.3. Ví dụ](#example)
-- [3. Tài liệu tham khảo](#reference)
+- [Tài liệu tham khảo](#reference)
 
 
 
@@ -189,4 +189,4 @@ Và làm tương tự cho các VPC khác.
 3. [Thiết kế AWS VPC](https://aws.amazon.com/answers/networking/aws-single-vpc-design/)
 
 
-Vậy là ta đã biết cách tự thiết kế VPC cho ứng dụng cụ thể. Tiếp theo, hãy tìm hiểu về định tuyến trong VPC, cùng một thành phần quan trọng: Internet Gateway.
+Vậy là ta đã biết cách tự thiết kế VPC cho ứng dụng cụ thể. Tiếp theo, hãy tìm hiểu về định tuyến trong VPC, cùng hai dịch vụ quan trọng: Internet Gateway và NAT Gateway.
