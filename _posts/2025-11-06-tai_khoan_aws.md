@@ -6,7 +6,7 @@ date: 2025-11-06
 permalink: /2025/11/06/aws-account
 img: /assets/1_taikhoanaws/overview.png
 categories: [Account & Organization]
-tags: [account, organization]
+tags: [Account & Organization]
 summary: Một cách ngắn gọn, có thể hiểu tài khoản AWS như một "container" chứa các thực thể được quản lý bởi tài khoản (IAM User, IAM Group, IAM Role)
 ---
 
