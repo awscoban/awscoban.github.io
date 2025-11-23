@@ -15,7 +15,7 @@ title: Categories
     {% for tag in site.categories %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
     <ul class="tags-expo-posts">
-      {% for post in tag[1] %}
+      {% for post in tag[1] reversed%}
       <!-- <li> -->
       <div>
         <span style="float: left;">
