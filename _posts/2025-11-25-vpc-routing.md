@@ -136,7 +136,7 @@ Destination     Target
 ```
 
 NAT Gateway sẽ lưu lại `Source` của gói tin, tức private IP `10.0.32.123` EC2 instance, rồi thay đổi `Source` thành IP tĩnh của nó. Sau đó, đối chiếu với bảng định tuyến, gói tin sẽ được chuyển tiếp tới Internet Gateway. 
-Internet Gateway không cần ánh xạ private-public IP như phần trên, do NAT Gateway đã có sẵn IP tĩnh công khai. Gói tin được chuyển tới đích đến cuối là máy chủ trên Internet. 
+Internet Gateway không cần ánh xạ private-public IP như phần trên, do NAT Gateway đã có sẵn IP tĩnh (là public IP). Gói tin được chuyển tới đích đến cuối là máy chủ trên Internet. 
 
 Quá trình gửi gói tin phản hồi diễn ra ngược lại, với `Destination` của gói tin này là `56.78.90.12` (tại máy chủ), `56.78.90.12` (tại Internet Gateway), và `10.0.32.123` (tại NAT Gateway, nơi dịch ngược lại private IP của EC2 instance).
 
