@@ -10,7 +10,7 @@ img: assets/8_s3/s3-versioning.png
 summary: "Dịch vụ lưu trữ trên AWS có thể chia thành 3 loại dựa theo cấu trúc lưu trữ: Object Storage, Block Storage, và File Storage. Object Storage lưu trữ và quản lý dữ liệu theo cách coi như từng đối tượng riêng biệt. Mỗi đối tượng gồm dữ liệu gốc (văn bản, hình ảnh, tệp tin, v.v.) cùng với  các thông tin thêm về đối tượng có thể truy xuất và sử dụng, như ID, tên, ngày tạo."
 ---
 
-Trong 4 bài tiếp theo, hãy cùng tìm hiểu về dịch vụ lưu trữ phổ biến nhất trên AWS: Simple Storage Service, hay S3. Bài này sẽ giới thiệu tổng quan bức tranh lớn và các khái niệm quan trọng trong S3.
+Trong 5 bài tiếp theo, hãy cùng tìm hiểu về dịch vụ lưu trữ phổ biến nhất trên AWS: Simple Storage Service, hay S3. Bài này sẽ giới thiệu tổng quan bức tranh lớn và các khái niệm quan trọng trong S3.
 
 ## Trong bài này:
 
