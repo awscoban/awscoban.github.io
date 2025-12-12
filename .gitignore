@@ -26,3 +26,4 @@ assets/*/.ipynb_checkpoints
 _posts/.fuse_hidden*
 run.sh
 diagrams/*
+_algolia_api_key
