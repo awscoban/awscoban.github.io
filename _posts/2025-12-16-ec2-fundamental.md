@@ -6,7 +6,7 @@ date: 2025-12-16
 permalink: /2025/12/16/ec2-fundamental
 categories: [EC2, Storage, EBS, EFS]
 tags: [EC2, Storage, EBS, EFS]
-img: assets/13_ec2/ec2-storage.png
+img: /assets/13_ec2/ec2-storage.png
 summary: "EC2 là dịch vụ cốt lõi bậc nhất trên AWS, cung cấp máy chủ ảo (gọi là EC2 Instance), giúp người dùng \"thuê\" năng lực tính toán (CPU, bộ nhớ, lưu trữ, mạng, v.v.) để chạy ứng dụng mà không cần mua phần cứng và tự cài đặt. Về bản chất, mỗi EC2 Instance là một máy ảo chạy trên một phần cứng vật lý (gọi là Host), theo công nghệ Virtualization."
 ---
 

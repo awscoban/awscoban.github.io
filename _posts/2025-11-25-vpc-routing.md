@@ -6,7 +6,7 @@ date: 2025-11-25
 permalink: /2025/11/25/vpc-routing
 categories: [VPC]
 tags: [VPC]
-img: assets/6_vpc_routing/natgw.png
+img: /assets/6_vpc_routing/natgw.png
 summary: "Ở hai bài trước, mình đã trình bày về kiến trúc và cách thiết kế VPC nếu cần triển khai ứng dụng trên AWS.
 Một ứng dụng sẽ có nhiều thành phần (giao diện, tính toán, lưu trữ), ở cả public và private subnet. Vậy câu hỏi đặt ra tiếp theo là chúng giao tiếp với nhau và với Internet như thế nào?"
 ---

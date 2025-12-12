@@ -6,7 +6,7 @@ date: 2025-12-09
 permalink: /2025/12/09/s3-storage-classes
 categories: [S3]
 tags: [S3]
-img: assets/11_s3_classes/lifecycle-transitions.png
+img: /assets/11_s3_classes/lifecycle-transitions.png
 summary: "Mỗi object lưu trên S3 được phân vào một lớp lưu trữ, với chi phí, độ trễ truy cập, và tính khả dụng khác nhau.
 Tất cả các lớp lưu trữ của S3 đều có độ bền dữ liệu 11 số 9 (99.999999999%), tức về mặt xác suất, nếu lưu 1 tỷ object, trong 100 năm ước tính chỉ mất mát 1 object. 
 Việc lựa chọn lớp lưu trữ nào tuỳ thuộc vào tần suất truy cập dữ liệu, các yêu cầu tối ưu chi phí hay độ trễ. Cùng tìm hiểu kỹ hơn dưới đây."

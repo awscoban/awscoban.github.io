@@ -6,7 +6,7 @@ date: 2025-11-30
 permalink: /2025/11/30/s3-fundamental
 categories: [S3, Storage]
 tags: [S3, Storage]
-img: assets/8_s3/s3-versioning.png
+img: /assets/8_s3/s3-versioning.png
 summary: "Dịch vụ lưu trữ trên AWS có thể chia thành 3 loại dựa theo cấu trúc lưu trữ: Object Storage, Block Storage, và File Storage. Object Storage lưu trữ và quản lý dữ liệu theo cách coi như từng đối tượng riêng biệt. Mỗi đối tượng gồm dữ liệu gốc (văn bản, hình ảnh, tệp tin, v.v.) cùng với  các thông tin thêm về đối tượng có thể truy xuất và sử dụng, như ID, tên, ngày tạo."
 ---
 
