@@ -2,7 +2,8 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
-gem 'jekyll-paginate'
+# gem 'jekyll-paginate'
+gem "jekyll-paginate-v2"
 gem 'jekyll-sitemap'
 # gems: [jekyll-paginate]
 # group :jekyll_plugins do
