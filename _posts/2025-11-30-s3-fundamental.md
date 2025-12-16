@@ -37,8 +37,8 @@ Dựa theo cấu trúc lưu trữ, có thể chia các dịch vụ lưu trữ tr
 - **Object Storage**: lưu trữ và quản lý dữ liệu theo cách coi như từng đối tượng (*object*) riêng biệt. Mỗi đối tượng gồm dữ liệu gốc (văn bản, hình ảnh, tệp tin, v.v.) cùng với *metadata*, là các thông tin thêm về đối tượng có thể truy xuất và sử dụng, như ID, tên, ngày tạo, v.v. Object Storage lưu trữ phẳng, tức không có cấu trúc hình cây thư mục, tất cả đối tượng đều nằm cùng nơi chứa gốc (ở S3 gọi là **bucket**, sẽ được đề cập trong bài này). Các đối tượng được đánh địa chỉ để truy vấn bằng ID duy nhất, tạo ra bằng cách dùng hàm băm (*hash*) lên nội dung dữ liệu. Phù hợp cho đa số tác vụ lưu trữ, sao lưu dữ liệu. S3 là dịch vụ tiêu biểu, sẽ được đề cập trong bài này.
 
 
-- **Block Storage**: chia dữ liệu thành các **khối** (**block**) kích thước bằng nhau, từ vài KB đến MB. Hệ điều hành sẽ gán địa chỉ duy nhất cho từng khối, lưu lại để tra cứu khi cần truy vấn dữ liệu. Block Storage cho phép truy xuất trực tiếp đến một khối dữ liệu cụ thể của dữ liệu mà không cần động vào toàn bộ các khối của dữ liệu đó. Phù hợp cho các tác vụ cần hiệu suất cao, độ trễ thấp. Block Storage trên AWS là Elastic Block Store (EBS), sẽ được thảo luận trong các bài sau. 
-<!-- TODO: include EBS post link -->
+- **Block Storage**: chia dữ liệu thành các **khối** (**block**) kích thước bằng nhau, từ vài KB đến MB. Hệ điều hành sẽ gán địa chỉ duy nhất cho từng khối, lưu lại để tra cứu khi cần truy vấn dữ liệu. Block Storage cho phép truy xuất trực tiếp đến một khối dữ liệu cụ thể của dữ liệu mà không cần động vào toàn bộ các khối của dữ liệu đó. Phù hợp cho các tác vụ cần hiệu suất cao, độ trễ thấp. Block Storage trên AWS là Elastic Block Store (EBS), sẽ được thảo luận trong [bài EBS](/2025/12/20/ebs). 
+
 
 - **File Storage**: đây là loại lưu trữ theo tệp tin và thư mục trên mà ta thường sử dụng. Phù hợp khi cần chia sẻ dữ liệu giữa nhiều máy với nhau. AWS cung cấp các giải pháp File Storage như Elastic File System (EFS), hay Amazon FSx.
 <!-- TODO: include EFS, FSx post link -->

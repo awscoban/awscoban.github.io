@@ -72,11 +72,9 @@ Ngoài ra, nếu một Host cần tạm ngưng để bảo trì, các Instance t
 
 Về lưu trữ, EC2 hỗ trợ tất cả [các loại lưu trữ trên AWS](/2025/11/30/s3-fundamental#storage-comparison). Cụ thể:
 
-- **Block Storage**: Instance Store và Elastic Block Store (EBS). Dưới đây mình tóm tắt các ý chính, bạn đọc có thể tìm hiểu kỹ hơn trong bài sau.
-    <!-- TODO: include link to bài sau -->
-    - Trên EC2 Host có sẵn block storage để lưu dữ liệu **tạm thời**, gọi là **Instance Store**, được chia nhỏ thành nhiều *volume*. Mỗi EC2 Instance chạy trên Host sẽ được cấp một (vài) volume tuỳ vào loại và kích thước Instance. Khi dừng, **ngủ đông (hibernate)**, hay **chấm dứt (terminate)** Instance đó, dữ liệu lưu trong Instance Store Volume tương ứng sẽ bị xoá đi.
+- **Block Storage**: Instance Store và Elastic Block Store (EBS). Dưới đây mình tóm tắt các ý chính, bạn đọc có thể tìm hiểu kỹ hơn trong [bài sau](/2025/12/20/ebs).
+    - Trên EC2 Host có sẵn block storage để lưu dữ liệu **tạm thời**, gọi là **Instance Store**, được chia nhỏ thành nhiều *volume*. Mỗi EC2 Instance chạy trên Host sẽ được cấp một (vài) volume tuỳ vào loại và kích thước Instance. Khi dừng, **ngủ đông (hibernate)**, hay **chấm dứt (terminate)** Instance đó, dữ liệu lưu trong Instance Store Volume tương ứng sẽ bị xoá đi. Bù lại, do trực tiếp gắn với Host, tốc độ đọc/ghi dữ liệu rất nhanh.
     - Do Instance Store chỉ lưu dữ liệu tạm thời, loại Block Storage thường dùng hơn cho EC2 là **Elastic Block Store (EBS)**, là một dạng lưu trữ ngoài ổn định. Mỗi EBS được chia nhỏ thành *volume* để kết nối với EC2 Instance cụ thể, và quan trọng nhất,  **độc lập với Instance**, tức dữ liệu lưu trên volume mặc định sẽ không mất đi khi ngắt kết nối với Instance (stop, hibernate, hay terminate). Lưu ý, EBS phải ở **cùng AZ** với EC2 Instance (hay Host). Không thể kết nối Instance đến một EBS volume khác AZ.
-    <!-- TODO: include link to EBS -->
 
 - **File Storage**: hỗ trợ **Elastic File System** (**EFS**) cho các Instance chạy Linux, và **FSx** (một loại File Storage hiệu năng cao). Với EFS, có thể "**mount**" Instance tới một *file system* và đọc/ghi dữ liệu lên đó. Khác với EBS, nhiều Instance có thể mount cùng một EFS file system, và do kết nối bằng mạng máy tính, file system không cần phải ở cùng AZ với với EC2 Instance (hay Host). Bạn đọc có thể tìm hiểu kỹ hơn trong bài EFS.
     <!-- TODO: include link to EFS -->
@@ -162,4 +160,4 @@ Mỗi Instance có một ENI chính (*primary ENI*) mặc định được gắn
 6. [EC2 ENI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html)
 7. [Elastic IP Address](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)
 
-Tiếp theo, hãy tìm hiểu sâu hơn về Instance Store và EBS.
+Tiếp theo, hãy tìm hiểu sâu hơn về EBS.
