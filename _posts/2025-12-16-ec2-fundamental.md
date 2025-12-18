@@ -78,8 +78,6 @@ Về lưu trữ, EC2 hỗ trợ tất cả [các loại lưu trữ trên AWS](/2
 
 - **File Storage**: hỗ trợ **Elastic File System** (**EFS**) cho các Instance chạy Linux, và **FSx** (một loại File Storage hiệu năng cao). Với EFS, có thể "**mount**" Instance tới một *file system* và đọc/ghi dữ liệu lên đó. Khác với EBS, nhiều Instance có thể mount cùng một EFS file system, và do kết nối bằng địa chỉ IP, file system không cần phải ở cùng AZ với với EC2 Instance (hay Host). Bạn đọc có thể tìm hiểu kỹ hơn trong [bài EFS](/2025/12/24/efs).
     <!-- TODO: include link to FSx -->
-    <!-- TODO: include link to bài EFS -->
-
 
 - **Object Storage**: có thể kết nối EC2 Instance để đọc/ghi dữ liệu lên S3, chỉ cần cấu hình [Bucket Policy](/2025/12/06/s3-security#bucket-policy) đúng. Ngoài ra, các bản sao lưu của EBS (gọi là **EBS Snapshot**) cũng được lưu trên S3.
 
