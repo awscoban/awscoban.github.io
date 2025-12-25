@@ -42,8 +42,7 @@ Virtualization giúp khai thác tối đa tài nguyên trên các máy chủ v�
 Lưu ý, cần phân biệt **virtualization** với **containerization** (Docker, Kubernetes). Virtualization ảo hoá **phần cứng** để chia cho các máy ảo (chạy cả hệ điều hành và các ứng dụng). Còn containerization chỉ ảo hoá **hệ điều hành** để chạy ứng dụng, quy mô và độ phức tạp nhỏ hơn. 
 Ta có thể tạo máy ảo, rồi chạy một Docker container trên máy ảo đó. 
 
-Mỗi EC2 Host được đặt tại 1 AZ, tất nhiên chỉ có khả năng phục hồi [AZ Resilience](/2025/11/12/aws_infrastructure/#resilience). Nếu AZ xảy ra vấn đề, EC2 Host sẽ ngừng hoạt động, cùng với tất cả EC2 Instance chạy trên nó. Một Host thường được dùng chung bởi nhiều người dùng (mỗi người dùng chạy Instance riêng), hoặc nếu cần thiết, một người dùng có thể trả tiền và sử dụng toàn bộ Host (Dedicated Host). 
-<!-- TODO: include link to Dedicated Host -->
+Mỗi EC2 Host được đặt tại 1 AZ, tất nhiên chỉ có khả năng phục hồi [AZ Resilience](/2025/11/12/aws_infrastructure/#resilience). Nếu AZ xảy ra vấn đề, EC2 Host sẽ ngừng hoạt động, cùng với tất cả EC2 Instance chạy trên nó. Một Host thường được dùng chung bởi nhiều người dùng (mỗi người dùng chạy Instance riêng), hoặc nếu cần thiết, một người dùng có thể trả tiền và sử dụng toàn bộ Host ([Dedicated Host](/2025/12/29/ec2-purchase-options#dedicated-host)). 
 
 Một EC2 Instance chạy trên một EC2 Host, nếu bạn **reboot** Instance, nó vẫn chạy trên cùng Host. 
 Nhưng nếu bạn **stop** rồi lại **start** Instance đó, có khả năng nó sẽ được **chuyển qua Host khác**. 
