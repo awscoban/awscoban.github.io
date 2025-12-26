@@ -101,8 +101,9 @@ Bảng dưới đây tóm tắt sự khác biệt giữa Dedicated Host và Dedi
 | Kiểm soát vị trí đặt Instance          | Có quyền kiểm soát cách Instance được đặt trên Host vật lý | Không hỗ trợ                              |
 | Tự động phục hồi Instance              | Có | Có                                    |
 | Mang theo giấy phép phần mềm (BYOL)    | Hỗ trợ                                               | Chỉ hỗ trợ Microsoft SQL Server with License Mobility và Windows Virtual Desktop Access (VDA)                      |
+|Hỗ trợ Capacity Reservation | Không | Có |
 
-
+<p></p>
 Dedicated Host và Dedicated Instance đều có chi phí cao hơn so với các phương thức thuê khác, dùng khi cần đáp ứng các yêu cầu đặc biệt về pháp lý hay ràng buộc, giấy phép phần mềm, cũng như bảo mật.
 
 <a name = "capacity-reservation">
@@ -135,3 +136,6 @@ Capacity Reservation cho phép người dùng **đặt trước tài nguyên** E
 4. [Các loại Saving Plan](https://docs.aws.amazon.com/savingsplans/latest/userguide/plan-types.html)
 5. [Dedicated Host](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html)
 6. [Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservation-overview.html)
+
+
+Tiếp theo, hãy tìm hiểu các cấu hình hữu dụng cho EC2 để tối ưu thời gian triển khai và hiệu năng, gồm Amazon Machine Image (AMI), Placement Group, 
