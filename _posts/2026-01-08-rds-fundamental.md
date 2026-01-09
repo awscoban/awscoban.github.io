@@ -20,7 +20,7 @@ Hẳn bạn đọc đã quen thuộc với việc sử dụng cơ sở dữ li�
 - [1. SQL và NoSQL](#sql-nosql)
     - [1.1. SQL](#sql)
     - [1.2. NoSQL](#no-sql)
-- [2. Relational Database Service (RDS)](#rds-vs-ec2)
+- [2. Relational Database Service (RDS)](#rds)
     - [2.1. So với Cài đặt CSDL trên EC2](#rds-vs-ec2)
     - [2.2. Các Khái niệm Chính trong RDS](#rds-concept)
     - [2.3. Kết nối](#connect-to-rds)
@@ -83,6 +83,7 @@ Là thuật ngữ chung để chỉ các cơ sở dữ liệu không sử dụng
 
 Điểm chính để phân biệt với SQL là **NoSQL không có cấu trúc dữ liệu chặt chẽ**. Dữ liệu trong NoSQL có thể được lưu trữ dưới nhiều định dạng khác nhau, như JSON, khóa-giá trị, bảng cột, đồ thị, v.v.. Điều này mang lại sự linh hoạt cao hơn trong việc lưu trữ và truy vấn dữ liệu, phù hợp cho các ứng dụng có dữ liệu phi cấu trúc hoặc bán cấu trúc.
 
+<a name = "rds"></a>
 
 ## 2. Relational Database Service (RDS)
 
