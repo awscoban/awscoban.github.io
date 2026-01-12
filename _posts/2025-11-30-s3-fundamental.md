@@ -40,8 +40,8 @@ Dựa theo cấu trúc lưu trữ, có thể chia các dịch vụ lưu trữ tr
 - **Block Storage**: chia dữ liệu thành các **khối** (**block**) kích thước bằng nhau, từ vài KB đến MB. Hệ điều hành sẽ gán địa chỉ duy nhất cho từng khối, lưu lại để tra cứu khi cần truy vấn dữ liệu. Block Storage cho phép truy xuất trực tiếp đến một khối dữ liệu cụ thể của dữ liệu mà không cần động vào toàn bộ các khối của dữ liệu đó. Phù hợp cho các tác vụ cần hiệu suất cao, độ trễ thấp. Block Storage trên AWS là Elastic Block Store (EBS), sẽ được thảo luận trong [bài EBS](/2025/12/20/ebs). 
 
 
-- **File Storage**: đây là loại lưu trữ theo tệp tin và thư mục trên mà ta thường sử dụng. Phù hợp khi cần chia sẻ dữ liệu giữa nhiều máy với nhau. AWS cung cấp các giải pháp File Storage như Elastic File System (EFS), hay Amazon FSx.
-<!-- TODO: include EFS, FSx post link -->
+- **File Storage**: đây là loại lưu trữ theo tệp tin và thư mục trên mà ta thường sử dụng. Phù hợp khi cần chia sẻ dữ liệu giữa nhiều máy với nhau. AWS cung cấp các giải pháp File Storage như [Elastic File System (EFS)](/2025/12/24/efs), hay Amazon FSx.
+<!-- TODO: include FSx link -->
 
 Bạn đọc có thể đọc thêm so sánh [tại đây](https://aws.amazon.com/compare/the-difference-between-block-file-object-storage/).
 
