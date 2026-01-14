@@ -109,6 +109,7 @@ Khi tạo function, ta chọn runtime phù hợp với ngôn ngữ đã viết m
 
 Có thể cấu hình năng lực tính toán của môi trường thực thi bằng cách **chọn dung lượng bộ nhớ** cho function, từ 128 MB đến 10240 MB (10 GB). vCPU được cấp phát **gián tiếp**, tăng theo lượng RAM đã chọn. Ví dụ, 1769 MB bộ nhớ tương ứng với 1 vCPU, tại thời điểm viết bài.
 
+<a name = "time-out>
 
 **Timeout**: là thời gian tối đa một function có thể chạy. Mặc định là 3 giây, **tối đa 15 phút**. Nếu function không hoàn thành trong thời gian này, Lambda sẽ dừng và ghi nhận lỗi.
 
