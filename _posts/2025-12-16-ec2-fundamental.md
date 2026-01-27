@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "13. EC2 Cơ Bản"
-title2: "EC2 Cơ Bản"
+title: "13. EC2"
+title2: "EC2"
 date: 2025-12-16
 permalink: /2025/12/16/ec2-fundamental
 categories: [EC2, Storage, EBS, EFS]

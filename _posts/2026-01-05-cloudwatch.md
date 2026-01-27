@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "18. CloudWatch Cơ Bản"
-title2: "CloudWatch Cơ Bản"
+title: "18. CloudWatch"
+title2: "CloudWatch"
 date: 2026-01-05
 permalink: /2026/01/05/cloudwatch
 categories: [Monitoring, EC2]

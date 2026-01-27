@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "19. RDS Cơ bản"
-title2: "RDS Cơ bản"
+title: "19. Relational Database Service (RDS)"
+title2: "Relational Database Service (RDS)"
 date: 2026-01-08
 permalink: /2026/01/08/rds-fundamental
 categories: [RDS, Database]
