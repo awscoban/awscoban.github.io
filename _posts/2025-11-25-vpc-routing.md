@@ -4,8 +4,8 @@ title: "6. Định tuyến trong VPC"
 title2: "Định tuyến trong VPC"
 date: 2025-11-25
 permalink: /2025/11/25/vpc-routing
-categories: [VPC]
-tags: [VPC]
+categories: [VPC, Networking]
+tags: [VPC, Networking]
 img: /assets/6_vpc_routing/natgw.png
 summary: "Ở hai bài trước, mình đã trình bày về kiến trúc và cách thiết kế VPC nếu cần triển khai ứng dụng trên AWS.
 Một ứng dụng sẽ có nhiều thành phần (giao diện, tính toán, lưu trữ), ở cả public và private subnet. Vậy câu hỏi đặt ra tiếp theo là chúng giao tiếp với nhau và với Internet như thế nào?"
@@ -150,7 +150,7 @@ Một điểm quan trọng cần lưu ý là NAT (cả Gateway và Instance) ch�
 
 - Dó đó, NAT Gateway không dùng cho IPv6. Ngược lại, Internet Gateway có thể làm việc với tất cả IPv6. Trong bảng định tuyến, có thể thêm route với destination `::/0` với target Internet Gateway để kết nối Internet **hai chiều**. CIDR `::/0` này chỉ tất cả địa chỉ IPv6, tương tự như `0.0.0.0/0` trong IPv4.
 
-- Còn nếu chỉ cần kết nối chiều đi (tương tự như trường hợp private subnet và NAT Gateway trong IPv4), hãy dùng route `::/0` trên với target là [**Egress-Only Internet Gateway**](https://docs.aws.amazon.com/vpc/latest/userguide/egress-only-internet-gateway.html). Đây là dịch vụ dành riêng cho IPv6.
+- Còn nếu chỉ cần kết nối chiều đi (tương tự như trường hợp private subnet và NAT Gateway trong IPv4), hãy dùng route `::/0` trên với target là [**Egress-Only Internet Gateway**](/2026/02/08/vpc-advanced#egress-only-internet-gateway). Đây là dịch vụ dành riêng cho IPv6.
 
 
 

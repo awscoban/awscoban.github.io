@@ -4,8 +4,8 @@ title: "5. Thiết kế VPC"
 title2: "Thiết kế VPC"
 date: 2025-11-20
 permalink: /2025/11/20/design-vpc
-categories: [VPC, Infrastructure]
-tags: [VPC, Infrastructure]
+categories: [VPC, Networking]
+tags: [VPC, Networking]
 img: /assets/5_design_vpc/multi-tier.png
 summary: "Khi tạo VPC, ta cần chỉ rõ IPv4 CIDR. 
 IPv4 chỉ gồm 32 bit, tức tổng cộng \\(2^{32}\\) ~ hơn 4 tỷ địa chỉ IPv4, rõ ràng là không đủ nếu tất cả các thiết bị kết nối trên toàn cầu đều cần có IP duy nhất. 
