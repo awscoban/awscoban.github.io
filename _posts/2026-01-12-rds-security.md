@@ -120,7 +120,7 @@ RDS hỗ trợ mã hoá dữ liệu cả khi lưu trữ (**encryption at rest**)
 
 ### 2.2. Mã hoá Dữ liệu khi Lưu trữ
 
-Khi tạo DB Instance, có thể bật mã hoá dữ liệu khi lưu trữ và chọn một [KMS Key](/2025/12/03/kms#kms-key) tương ứng. Khi đó, toàn bộ dữ liệu trên DB Instance, và tất cả các bản sao lưu tự động hoặc snapshot thủ công đều được mã hoá. Vì các DB Instance sử dụng [EBS](/2025/12/20/ebs) để lưu trữ dữ liệu, việc mã hoá dữ liệu khi lưu trữ trong RDS cũng giống tính năng mã hoá của EBS, vẫn sử dụng quy trình *mã hoá phong bì* (*envelope encryption*) như đã thảo luận trong hai bài [KMS](#/2025/12/03/kms#data-encryption-key) và [EBS](/2025/12/20/ebs#ebs-encryption).
+Khi tạo DB Instance, có thể bật mã hoá dữ liệu khi lưu trữ và chọn một [KMS Key](/2025/12/03/kms#kms-key) tương ứng. Khi đó, toàn bộ dữ liệu trên DB Instance, và tất cả các bản sao lưu tự động hoặc snapshot thủ công đều được mã hoá. Vì các DB Instance sử dụng [EBS](/2025/12/20/ebs) để lưu trữ dữ liệu, việc mã hoá dữ liệu khi lưu trữ trong RDS cũng giống tính năng mã hoá của EBS, vẫn sử dụng quy trình *mã hoá phong bì* (*envelope encryption*) như đã thảo luận trong hai bài [KMS](/2025/12/03/kms#data-encryption-key) và [EBS](/2025/12/20/ebs#ebs-encryption).
 
 
 Ngoài ra, RDS cho SQL Server và Oracle hỗ trợ mã hoá dữ liệu ở cấp độ CSDL, gọi là **TDE** (**Transparent Data Encryption**). DB Engine của hai loại CSDL này tự động mã hoá dữ liệu khi lưu trữ và giải mã khi truy xuất, coi như một tầng mã hoá bổ sung phía trước tầng mã hoá của RDS (nếu có). 
