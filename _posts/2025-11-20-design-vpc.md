@@ -69,7 +69,7 @@ Dưới đây là bảng tổng hợp kích thước VPC và subnet phổ biến
 **Diễn giải**: giả sử ứng dụng có quy mô nhỏ, chỉ cần tổng cộng dưới 200 IP để cấp phát (cho các EC2 instance, DB instance, Lambda function, v.v.), có thể chọn kích thước VPC `/24` ở dòng đầu tiên trong bảng. 
 Có thể chia thành 8 subnet kích thước `/27` (vì \\(2^{32-24} / 2^{32-27} = 8\\)), mỗi subnet sẽ có \\(2^{32-27} - 5 = 27\\) IP khả dụng, như vậy tổng số IP khả dụng trong VPC là \\( 27 * 8 = 216 \\), đủ dùng cho ứng dụng. 
 
-Tất nhiên, đây chỉ là thiết kế thô, chưa cân nhắc đến vấn đề mở rộng hay [đáp ứng HA, FT](/2025/11/12/aws_infrastructure/#ha-ft-dr).
+Tất nhiên, đây chỉ là thiết kế thô, chưa cân nhắc đến vấn đề mở rộng hay [đáp ứng HA, FT](/2025/11/12/aws_infrastructure#ha-ft-dr).
 Và do việc tạo VPC là miễn phí, bất kể kích thước (bạn chỉ bị tính phí cho các tài nguyên chạy trên VPC), nên phương án tốt nhất là chọn kích thước VPC tối đa (`/16`), tránh các vấn đề về sau khi cần mở rộng.
 
 
@@ -90,8 +90,8 @@ Hãy đi vào một bài toán cụ thể, ta cần thiết kế VPC cho một �
 
 ### 2.1. Cấu trúc đa tầng
 
-Khi thiết kế VPC cho ứng dụng này, đầu tiên ta cân nhắc sẽ triển khai trên bao nhiêu AZ (để [đáp ứng HA, FT](/2025/11/12/aws_infrastructure/#ha-ft-dr)).
-Một VPC ứng với một Region, một Region có ít nhất 3 AZ. Và 3 AZ là đủ để ứng dụng đạt [Region Resilience](/2025/11/12/aws_infrastructure/#resilience). 
+Khi thiết kế VPC cho ứng dụng này, đầu tiên ta cân nhắc sẽ triển khai trên bao nhiêu AZ (để [đáp ứng HA, FT](/2025/11/12/aws_infrastructure#ha-ft-dr)).
+Một VPC ứng với một Region, một Region có ít nhất 3 AZ. Và 3 AZ là đủ để ứng dụng đạt [Region Resilience](/2025/11/12/aws_infrastructure#resilience). 
 
 Trong một AZ, mỗi tầng ứng dụng nên được đặt trong một subnet, cùng với một subnet dự phòng, tổng cộng ta cần 4 subnet trong mỗi AZ, tức 12 subnet trong 3 AZ.
 
@@ -112,8 +112,8 @@ Các subnet trong cùng VPC mặc định có thể giao tiếp với nhau, nên
 ### 2.2. Cấu trúc đa vùng, đa giai đoạn
 
 
-Nhưng, vẫn chưa xong! Thiết kế như vậy chỉ giúp ứng dụng đạt khả năng phục hồi [Region Resilience](/2025/11/12/aws_infrastructure/#resilience).
-Việc này, dù trong đa số trường hợp là đủ đáp ứng yêu cầu kỹ thuật, nhưng với các ứng dụng lớn có quy mô toàn cầu thì cần [Global Resilience](/2025/11/12/aws_infrastructure/#resilience). 
+Nhưng, vẫn chưa xong! Thiết kế như vậy chỉ giúp ứng dụng đạt khả năng phục hồi [Region Resilience](/2025/11/12/aws_infrastructure#resilience).
+Việc này, dù trong đa số trường hợp là đủ đáp ứng yêu cầu kỹ thuật, nhưng với các ứng dụng lớn có quy mô toàn cầu thì cần [Global Resilience](/2025/11/12/aws_infrastructure#resilience). 
 Khi đó, ta cần triển khai ứng dụng trên ít nhất một Region khác, tức là cần tạo một VPC với **CIDR không trùng lặp** với các VPC ở Region khác của ứng dụng, hay tốt hơn hết là không trùng với CIDR nào của doanh nghiệp.
 Dễ hiểu, vì theo nguyên tắc ta cần IP duy nhất trong phạm vi nội bộ tổ chức. 
 

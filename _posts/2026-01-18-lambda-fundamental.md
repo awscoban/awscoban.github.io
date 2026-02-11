@@ -207,9 +207,9 @@ Bạn đọc có thể tìm hiểu quá trình chi tiết hơn trong blog của 
 
 Lambda Function thường cần truy cập các dịch vụ AWS khác để thực hiện tác vụ, ví dụ đọc/ghi dữ liệu từ S3, ghi log vào CloudWatch, v.v. Để làm điều này, cần cấp quyền cho function thông qua **Execution Role**. 
 
-Đây là một [IAM Role](/2025/11/07/iam/#iam-role) được gán cho function. Mỗi function phải có một Excution Role, một Excution Role có thể gán cho nhiều function. Khi function được kích hoạt, Lambda sử dụng các quyền được định nghĩa trong [Permission Policy](/2025/11/07/iam/#permission-policy) của Execution Role để truy cập các dịch vụ khác.
+Đây là một [IAM Role](/2025/11/07/iam#iam-role) được gán cho function. Mỗi function phải có một Excution Role, một Excution Role có thể gán cho nhiều function. Khi function được kích hoạt, Lambda sử dụng các quyền được định nghĩa trong [Permission Policy](/2025/11/07/iam#permission-policy) của Execution Role để truy cập các dịch vụ khác.
 
-Đối tượng được cấp quyền là Lambda, nên [Trust Policy](/2025/11/07/iam/#trust-policy) của Execution Role luôn có Principal là `lambda.amazonaws.com`:
+Đối tượng được cấp quyền là Lambda, nên [Trust Policy](/2025/11/07/iam#trust-policy) của Execution Role luôn có Principal là `lambda.amazonaws.com`:
 
 
 ```json
@@ -277,7 +277,7 @@ Ví dụ, thêm policy sau để cấp quyền đọc object trong S3:
 
 ### 4.2. Cấp Quyền cho các Danh tính Khác Kích hoạt Lambda Function
 
-Để cho phép người dùng hoặc các dịch vụ AWS khác kích hoạt một function, cần gán [resource policy](/2025/11/07/iam/#resource-policy) cho function đó. 
+Để cho phép người dùng hoặc các dịch vụ AWS khác kích hoạt một function, cần gán [resource policy](/2025/11/07/iam#resource-policy) cho function đó. 
 
 Ví dụ, resource policy sau cho phép tài khoản AWS với ID `987654321098` và S3 kích hoạt function có tên `awscoban-function`:
 

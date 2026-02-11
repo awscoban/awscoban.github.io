@@ -57,7 +57,7 @@ Khi tạo ASG, ta cần chỉ rõ thông số của các Instance trong nhóm. T
 - [Loại Instance](/2025/12/16/ec2-fundamental#instance-type).
 - Ổ [EBS](/2025/12/20/ebs#ebs-overview) cũng như [Instance Store](/2025/12/16/ec2-fundamental#ec2-storage).
 - [VPC](/2025/11/13/vpc#vpc), [Subnet](/2025/11/13/vpc#subnet) và [Security Group](/2025/11/27/sg-nacl).
-- [IAM Role](/2025/11/07/iam/#iam-role).
+- [IAM Role](/2025/11/07/iam#iam-role).
 
 Launch Template có thể được tái sử dụng cho nhiều ASG, giúp tiết kiệm thời gian và công sức cấu hình. Ngoài ra, Launch Template hỗ trợ **phiên bản (versioning)**, cho phép tạo các phiên bản khác nhau của cùng một template. Khi tạo hoặc cập nhật ASG, có thể chọn một phiên bản cụ thể của Launch Template. Lưu ý, **không thể chỉnh sửa** Launch Template sau khi được tạo, chỉ có thể tạo phiên bản mới rồi sử dụng.
 

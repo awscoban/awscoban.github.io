@@ -29,7 +29,7 @@ Một ứng dụng sẽ có nhiều thành phần (giao diện, tính toán, lư
 ## 1. Bộ định tuyến VPC
 
 Trong mỗi VPC (cả VPC mặc định hay tự tạo), AWS cung cấp sẵn một bộ định tuyến (*VPC Router*) để điều hướng các gói tin giữa các subnet trong VPC cũng như với Internet bên ngoài.
-Bộ định tuyến này có *network interface* tại tất cả subnet, được dành riêng địa chỉ IP thứ 2: `xxx.xxx.xxx.1` (xem lại [5 IP không thể sử dụng trong subnet](/2025/11/13/vpc/#vpc-subnet)), và AWS đảm bảo nó luôn hoạt động, miễn là ta cấu hình bảng định tuyến đúng.
+Bộ định tuyến này có *network interface* tại tất cả subnet, được dành riêng địa chỉ IP thứ 2: `xxx.xxx.xxx.1` (xem lại [5 IP không thể sử dụng trong subnet](/2025/11/13/vpc#vpc-subnet)), và AWS đảm bảo nó luôn hoạt động, miễn là ta cấu hình bảng định tuyến đúng.
 
 <a name ="route-table"></a>
 
@@ -38,7 +38,7 @@ Mặc định, khi tạo VPC, AWS sẽ tạo sẵn một bảng định tuyến 
 Nếu cần tự cấu hình theo ý muốn, ta có thể tự tạo bảng định tuyến, gỡ bảng định tuyến có sẵn khỏi subnet, rồi gán bảng mới vào.
 Lưu ý, **một subnet chỉ có thể có một bảng định tuyến** tại bất kì thời điểm nào, nhưng một bảng định tuyến có thể được gán cho nhiều subnet. 
 
-Mỗi bảng định tuyến chứa tập hợp các tuyến (*route*), quy định cách điều hướng các gói tin. Ví dụ, xét bảng định tuyến có sẵn dưới đây của [VPC mặc định](/2025/11/13/vpc/#default-vpc) (có CIDR `172.31.0.0/16`):
+Mỗi bảng định tuyến chứa tập hợp các tuyến (*route*), quy định cách điều hướng các gói tin. Ví dụ, xét bảng định tuyến có sẵn dưới đây của [VPC mặc định](/2025/11/13/vpc#default-vpc) (có CIDR `172.31.0.0/16`):
 
 <p>
 <image src="/assets/6_vpc_routing/sample_route_table.png" alt="Route Table" style="max-width:100%;height:auto;display:block;margin:0 auto;"/>
@@ -48,7 +48,7 @@ Trong đó hai trường quan trọng là:
 
 
 #### Destination
-Là dải CIDR ứng với địa chỉ đích của gói tin. Bộ định tuyến sẽ xác định địa chỉ đích khớp với route nào. Ví dụ, hình trên có 2 route với destination là `0.0.0.0/0` (CIDR này chứa tất cả địa chỉ IPv4 có thể có, xem lại [cách đọc CDIR](/2025/11/13/vpc/#cidr)), và `172.31.0.0/16` là CIDR của VPC.
+Là dải CIDR ứng với địa chỉ đích của gói tin. Bộ định tuyến sẽ xác định địa chỉ đích khớp với route nào. Ví dụ, hình trên có 2 route với destination là `0.0.0.0/0` (CIDR này chứa tất cả địa chỉ IPv4 có thể có, xem lại [cách đọc CDIR](/2025/11/13/vpc#cidr)), và `172.31.0.0/16` là CIDR của VPC.
 
 Giả sử một gói tin có địa chỉ đích là `172.31.12.34`, địa chỉ đích này khớp với cả 2 destination, vì IP này nằm trong cả 2 dải CIDR. Khi có nhiều destination trùng khớp, **nguyên tắc xác định route cho gói tin là chọn route cụ thể nhất (tức có prefix lớn nhất)**. Như vậy, gói tin `172.31.12.34` cuối cùng sẽ được khớp với `172.31.0.0/16`, có đích đến là `local`, tức gói tin sẽ được chuyển tiếp đến máy có IP này trong VPC.
 
@@ -66,7 +66,7 @@ Là nơi gói tin sẽ được chuyển tiếp đến, ứng với destination 
 
 Internet Gateway quản lý giao tiếp giữa VPC với [các dịch vụ AWS nằm trong Public Network](/2025/11/13/vpc#public-network) và mạng Internet. Nếu VPC không có Internet Gateway, các tài nguyên trong VPC không thể kết nối ra bên ngoài, và ngược lại, từ AWS Public Network hay Internet cũng không thể truy cập vào VPC. 
 
-Một VPC có tối đa 1 Internet Gateway (có thể không có). Internet Gateway có khả năng phục hồi [Region Resilience](/2025/11/12/aws_infrastructure/#resilience), và cũng như bộ định tuyến VPC, được AWS quản lý, người dùng chỉ cần sử dụng.
+Một VPC có tối đa 1 Internet Gateway (có thể không có). Internet Gateway có khả năng phục hồi [Region Resilience](/2025/11/12/aws_infrastructure#resilience), và cũng như bộ định tuyến VPC, được AWS quản lý, người dùng chỉ cần sử dụng.
 
 
 Trong hình dưới, ta có một VPC với CIDR `10.0.0.0/16`, trong VPC có một [public subnet](/2025/11/13/vpc#vpc-subnet) với CIDR `10.0.16.0/20`, tự động gán public IP cho tài nguyên bên trong. 
@@ -113,7 +113,7 @@ Trong AWS, các dịch vụ thực thi NAT là NAT Gateway và NAT Instance. AWS
 
 Như vậy, khi sử dụng NAT Gateway, các tài nguyên trong private subnet đã có public IP (của NAT Gateway), do đó có thể kết nối Internet qua Internet Gateway!
 
-NAT Gateway được đặt trong **public** subnet, có địa chỉ IPv4 tĩnh (AWS gọi là *Elastic IP*), có khả năng phục hồi [AZ Resilience](/2025/11/12/aws_infrastructure/#resilience). Nếu cần [Region Resilience](/2025/11/12/aws_infrastructure/#resilience), ta cần đặt một NAT Gateway trong mỗi AZ của Region.
+NAT Gateway được đặt trong **public** subnet, có địa chỉ IPv4 tĩnh (AWS gọi là *Elastic IP*), có khả năng phục hồi [AZ Resilience](/2025/11/12/aws_infrastructure#resilience). Nếu cần [Region Resilience](/2025/11/12/aws_infrastructure#resilience), ta cần đặt một NAT Gateway trong mỗi AZ của Region.
 
 <p>
 <image src="/assets/6_vpc_routing/natgw.png" alt="NAT Gateway" style="max-width:100%;height:auto;display:block;margin:0 auto;"/>

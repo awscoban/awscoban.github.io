@@ -38,7 +38,7 @@ Bài toán cơ bản trong mọi dịch vụ là kiểm soát truy cập, để 
 
 <a name="iam-policy"></a>
 
-- Bước 1: Tạo một [IAM Policy](/2025/11/07/iam/#iam-policy) cho phép hành động `rds-db:connect` trên DB Instance cụ thể, trong Resource [ARN](/2025/11/07/iam/#arn) chỉ rõ username bên trong DB Instance đó.
+- Bước 1: Tạo một [IAM Policy](/2025/11/07/iam#iam-policy) cho phép hành động `rds-db:connect` trên DB Instance cụ thể, trong Resource [ARN](/2025/11/07/iam#arn) chỉ rõ username bên trong DB Instance đó.
 
 Giả sử ta có một DB Instance chạy PostgresSQL với ID `db-instance-id-12345`, trong đó có một tài khoản CSDL tên là `awscoban`, được tạo và cấu hình xác thực IAM bằng lệnh SQL sau:
 
@@ -66,7 +66,7 @@ IAM Policy tương ứng sẽ như sau:
 }
 ```
 
-Sau khi tạo, gán IAM Policy này cho [IAM User](/2025/11/07/iam/#iam-user) hoặc [IAM Role](/2025/11/07/iam/#iam-role) tương ứng với ứng dụng hoặc người dùng cần truy cập CSDL trong RDS.
+Sau khi tạo, gán IAM Policy này cho [IAM User](/2025/11/07/iam#iam-user) hoặc [IAM Role](/2025/11/07/iam#iam-role) tương ứng với ứng dụng hoặc người dùng cần truy cập CSDL trong RDS.
 
 
 

@@ -95,7 +95,7 @@ Với cơ sở dữ liệu SQL, nếu muốn triển khai trên AWS, đương nh
 
 - **Hiệu năng cao**: RDS được tối ưu hóa để cung cấp hiệu năng cao cho các cơ sở dữ liệu SQL, với khả năng tự động điều chỉnh tài nguyên dựa trên nhu cầu sử dụng.
 - **Quản lý đơn giản**: người dùng chỉ cần sử dụng, không cần lo lắng về việc cài đặt phần mềm, vá lỗi, nâng cấp, v.v.
-- **Tự động sao lưu và phục hồi**: RDS hỗ trợ sao lưu tự động, tiết kiệm rất nhiều thời gian và công sức quản lý sao lưu thủ công. Cũng có thể dễ dàng phục hồi cơ sở dữ liệu về trạng thái trước đó, hoặc khi cần [phục hồi sau thảm họa](/2025/11/12/aws_infrastructure/#dr).
+- **Tự động sao lưu và phục hồi**: RDS hỗ trợ sao lưu tự động, tiết kiệm rất nhiều thời gian và công sức quản lý sao lưu thủ công. Cũng có thể dễ dàng phục hồi cơ sở dữ liệu về trạng thái trước đó, hoặc khi cần [phục hồi sau thảm họa](/2025/11/12/aws_infrastructure#dr).
 
 Các *yêu cầu đặc biệt* đề cập ở trên khi cần tự cài đặt cơ sở dữ liệu trên EC2 thay vì dùng RDS, bao gồm: cần tùy chỉnh sâu cấu hình cơ sở dữ liệu (tầng hệ điều hành), sử dụng các phiên bản cơ sở dữ liệu không được RDS hỗ trợ, hoặc đơn giản là do yêu cầu cấp trên.
 
@@ -124,7 +124,7 @@ DB Instance cũng có thể kết nối từ mạng doanh nghiệp thông qua Di
 Ngoài ra, RDS cũng hỗ trợ **public access**, tức cung cấp địa chỉ IP công khai cho DB Instance để cho phép kết nối từ bên ngoài VPC. Tuy nhiên, người dùng cần cân nhắc kỹ nếu muốn sử dụng tính năng này vì lý do bảo mật.
 <!-- TODO: include link to DX, VPN -->
 
-Cấu hình mặc định đơn AZ tất nhiên chỉ có khả năng phục hồi [AZ Resilience](/2025/11/12/aws_infrastructure/#resilience). Để tăng tính khả dụng, có thể cấu hình [Multi-AZ](/2026/01/10/rds-multi-az#multi-az-deployment) cho DB Instance, với một hoặc hai *Standby Instance* ở AZ khác sẵn sàng thay thế nếu DB Instance chính xảy ra vấn đề. Thiết lập này sẽ được thảo luận kỹ hơn trong bài tiếp theo.
+Cấu hình mặc định đơn AZ tất nhiên chỉ có khả năng phục hồi [AZ Resilience](/2025/11/12/aws_infrastructure#resilience). Để tăng tính khả dụng, có thể cấu hình [Multi-AZ](/2026/01/10/rds-multi-az#multi-az-deployment) cho DB Instance, với một hoặc hai *Standby Instance* ở AZ khác sẵn sàng thay thế nếu DB Instance chính xảy ra vấn đề. Thiết lập này sẽ được thảo luận kỹ hơn trong bài tiếp theo.
 
 <a name = "backup-recovery"></a>
 

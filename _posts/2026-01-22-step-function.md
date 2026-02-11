@@ -82,7 +82,7 @@ Mỗi trạng thái trong quy trình thực hiện một tác vụ cụ thể. C
 
 Đây là ngôn ngữ mô tả quy trình trong Step Function, định dạng JSON. Mỗi quy trình được biểu diễn dưới dạng một đối tượng JSON với các trường chính:
 - `StartAt`: tên trạng thái bắt đầu.
-- `States`: chứa tất cả các trạng thái trong quy trình, mỗi trạng thái là một đối tượng con với các trường như `Type` chỉ [loại trạng thái](#state), `Resource` là [ARN](/2025/11/07/iam/#arn) của tài nguyên được sử dụng, `Next` chỉ trạng thái tiếp theo, `End` cho biết đây có phải trạng thái kết thúc hay không, v.v.
+- `States`: chứa tất cả các trạng thái trong quy trình, mỗi trạng thái là một đối tượng con với các trường như `Type` chỉ [loại trạng thái](#state), `Resource` là [ARN](/2025/11/07/iam#arn) của tài nguyên được sử dụng, `Next` chỉ trạng thái tiếp theo, `End` cho biết đây có phải trạng thái kết thúc hay không, v.v.
 
 Ví dụ, dưới đây là mô tả quy trình trong hình minh hoạ phía trên. Bắt đầu từ trạng thái `Call API`, là một trạng thái Task, thực hiện gọi API qua API Gateway. Kết quả trả về được chuyển sang trạng thái Choice `Call Successful?`, nếu trả về HTTP 200, chuyển sang trạng thái `Notify Success`, ngược lại chuyển sang `Notify Failure`. Cả hai trạng thái này đều kết thúc quy trình.
 

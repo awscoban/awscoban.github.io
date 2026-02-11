@@ -81,7 +81,7 @@ Việc sao chép dữ liệu từ DB Instance sang Read Replica là **bất đ�
 
 Một điểm quan trọng khác là Read Replica **có thể ở Region khác**. Việc sao chép dữ liệu vẫn là bất đồng bộ, thông qua kết nối riêng được AWS thiết lập, không cần dùng VPC Peering để kết nối hai VPC.
 <!-- TODO: include link to VPC Peering Connection -->
-Điều này giúp giảm độ trễ khi truy vấn trên toàn cầu, đồng thời việc sao lưu dữ liệu sang Region khác cũng tăng khả năng phục hồi của cơ sở dữ liệu lên [Global Resilience](/2025/11/12/aws_infrastructure/#resilience).
+Điều này giúp giảm độ trễ khi truy vấn trên toàn cầu, đồng thời việc sao lưu dữ liệu sang Region khác cũng tăng khả năng phục hồi của cơ sở dữ liệu lên [Global Resilience](/2025/11/12/aws_infrastructure#resilience).
 
 
 Việc tạo và xoá Read Replica được thực hiện **thủ công**, RDS không hỗ trợ tự động tăng giảm số lượng Read Replica dựa trên tải thực tế (*auto-scaling*). Tại thời điểm viết bài, với các [DB Engine](/2026/01/08/rds-fundamental#rds-concept) MySQL, PostgreSQL, MariaDB, và SQL Server, có thể tạo tối đa 15 Read Replica cho mỗi DB Instance. Với Oracle, giới hạn này là 5.

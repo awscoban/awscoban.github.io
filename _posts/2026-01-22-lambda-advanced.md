@@ -83,7 +83,7 @@ def lambda_handler(event, context):
 ### 1.2. Kích hoạt (Invoke)
 
 Giai đoạn tiếp theo là kích hoạt (*Invoke*), trong đó Lambda gọi hàm chính của function để xử lý sự kiện đầu vào.
-[Timeout](/2025/01/18/lambda-fundamental/#time-out) của function bản chất sẽ giới hạn thời gian của giai đoạn này. Hàm chính và tất cả phần mở rộng phải hoàn thành trong thời gian này.
+[Timeout](/2025/01/18/lambda-fundamental#time-out) của function bản chất sẽ giới hạn thời gian của giai đoạn này. Hàm chính và tất cả phần mở rộng phải hoàn thành trong thời gian này.
 
 Nếu có lỗi xảy ra trong giai đoạn kích hoạt, Lambda [chấm dứt](#shutdown-phase) rồi lại khởi tạo lại môi trường thực thi (như đã đề cập phía trên).
 
@@ -151,7 +151,7 @@ Trên giao diện Lambda, khi thay đổi mã nguồn hoặc cấu hình của f
 Ngược lại, tại một thời điểm bất kỳ, ta có thể tạo một phiên bản cố định từ `$LATEST` (*publish new version* trên giao diện). Phiên bản sau khi được tạo sẽ  **cố định, không thể thay đổi**. Phiên bản này bao gồm mã nguồn, cấu hình, thư viện, các biến môi trường, v.v., của function tại thời điểm tạo phiên bản. Số hiệu phiên bản được tự động tăng dần, bắt đầu từ 1.
 
 
-Giả sử ta có một function tên là `awscb-func`, mỗi phiên bản của function này sẽ được định danh bởi một [ARN](/2025/11/07/iam/#arn) duy nhất, trỏ đến phiên bản đó, với số hiệu phiên bản được thêm vào cuối ARN. Ví dụ:
+Giả sử ta có một function tên là `awscb-func`, mỗi phiên bản của function này sẽ được định danh bởi một [ARN](/2025/11/07/iam#arn) duy nhất, trỏ đến phiên bản đó, với số hiệu phiên bản được thêm vào cuối ARN. Ví dụ:
 
 - ARN của function, trỏ tới mã nguồn mới nhất (chưa publish):
 ```
@@ -178,7 +178,7 @@ arn:aws:lambda:us-east-1:123456789012:function:awscb-func:2
 
 ## 4. Alias
 
-Alias là một **con trỏ** trỏ tới một phiên bản cụ thể của function. Mỗi alias được định danh bởi một [ARN](/2025/11/07/iam/#arn) duy nhất, với tên alias được thêm vào cuối ARN. Tuy nhiên, alias **có thể được cập nhật** để trỏ tới phiên bản khác khi cần.
+Alias là một **con trỏ** trỏ tới một phiên bản cụ thể của function. Mỗi alias được định danh bởi một [ARN](/2025/11/07/iam#arn) duy nhất, với tên alias được thêm vào cuối ARN. Tuy nhiên, alias **có thể được cập nhật** để trỏ tới phiên bản khác khi cần.
 
 Ví dụ, ta có thể tạo alias `PROD` trỏ tới phiên bản 1 của function `awscb-func`. Khi đó, 2 ARN sau sẽ tương đương:
 

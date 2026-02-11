@@ -50,7 +50,7 @@ Bạn đọc có thể đọc thêm so sánh [tại đây](https://aws.amazon.co
 
 ## 2. S3
 
-Như đã giới thiệu, S3 (*Simple Storage Service*) là object storage trên AWS, được khai thác theo Region, tức người dùng sẽ chọn Region khi tải dữ liệu lên S3. S3 mặc định sẽ sao lưu dữ liệu trên các AZ trong Region, nên có khả năng phục hồi [Region Resilience](/2025/11/12/aws_infrastructure/#resilience). Cũng có thể cấu hình sao lưu đa vùng (*cross-region replication*) để tăng lên [Global Resilience](/2025/11/12/aws_infrastructure/#resilience).
+Như đã giới thiệu, S3 (*Simple Storage Service*) là object storage trên AWS, được khai thác theo Region, tức người dùng sẽ chọn Region khi tải dữ liệu lên S3. S3 mặc định sẽ sao lưu dữ liệu trên các AZ trong Region, nên có khả năng phục hồi [Region Resilience](/2025/11/12/aws_infrastructure#resilience). Cũng có thể cấu hình sao lưu đa vùng (*cross-region replication*) để tăng lên [Global Resilience](/2025/11/12/aws_infrastructure#resilience).
 <!-- TODO: add link to CRR -->
 
 S3 hỗ trợ lưu trữ tất cả các dạng dữ liệu, từ văn bản, hình ảnh, âm thanh, đến các tập dữ liệu lớn dùng cho các ứng dụng AI. 

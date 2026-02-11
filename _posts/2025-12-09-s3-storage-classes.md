@@ -50,7 +50,7 @@ Nếu truy cập dữ liệu thường xuyên (nhiều lần trong tháng), hay 
 ### 1.1. S3 Standard
 
 Đây là lớp lưu trữ **mặc định** khi tải dữ liệu lên S3. 
-Object được sao lưu trên tất cả AZ của Region (ít nhất 3 AZ), nên có khả năng phục hồi [Region Resilience](/2025/11/12/aws_infrastructure/#resilience).
+Object được sao lưu trên tất cả AZ của Region (ít nhất 3 AZ), nên có khả năng phục hồi [Region Resilience](/2025/11/12/aws_infrastructure#resilience).
 
 S3 Standard tính phí lưu trữ theo GB mỗi tháng, phí di chuyển dữ liệu **RA** khỏi S3 (theo GB), cỡ vài cent/GB tuỳ Region, kể cả ra ngoài Internet hoặc ra AWS Region khác. Việc tải dữ liệu **vào** S3 là miễn phí.
 Ngoài ra còn tính phí theo mỗi 1000 yêu cầu. 
@@ -72,7 +72,7 @@ Ngoài việc phù hợp với dữ liệu truy cập thường xuyên, nên s�
 
 Lớp này phù hợp cho ứng dụng cần độ trễ siêu thấp (dưới 10 ms), như AI, Data Streaming, HPC (High Performance Computing).
 S3 Express One Zone có tốc độ truy xuất dữ liệu nhanh hơn S3 Standard cỡ 10 lần. 
-Hạn chế là dữ liệu chỉ được lưu trên 1 AZ tuỳ chọn, nên chỉ có khả năng phục hồi [AZ Resilience](/2025/11/12/aws_infrastructure/#resilience).
+Hạn chế là dữ liệu chỉ được lưu trên 1 AZ tuỳ chọn, nên chỉ có khả năng phục hồi [AZ Resilience](/2025/11/12/aws_infrastructure#resilience).
 
 Về chi phí ở `us-east-1`, tại thời điểm viết bài:
 - Chi phí lưu trữ là **$0.11** mỗi GB mỗi tháng, gấp gần 5 lần S3 Standard. S3 Express One Zone cũng tính phí tải lên dữ liệu, **$0.0032** mỗi GB, thay vì miễn phí.
@@ -89,7 +89,7 @@ Về chi phí ở `us-east-1`, tại thời điểm viết bài:
 
 ### 2.1. S3 Standard-IA
 
-Viết tắt của S3 Standard-Infrequent Access. Các tính chất lưu trữ hầu hết đều giống [S3 Standard](#s3-standard), cũng có độ bền dữ liệu 11 số 9, dữ liệu cũng được sao lưu trên tất cả AZ nên có khả năng phục hồi [Region Resilience](/2025/11/12/aws_infrastructure/#resilience).
+Viết tắt của S3 Standard-Infrequent Access. Các tính chất lưu trữ hầu hết đều giống [S3 Standard](#s3-standard), cũng có độ bền dữ liệu 11 số 9, dữ liệu cũng được sao lưu trên tất cả AZ nên có khả năng phục hồi [Region Resilience](/2025/11/12/aws_infrastructure#resilience).
 
 Điểm khác biệt là ở **chi phí**, ví dụ cũng tại `us-east-1`:
 
@@ -108,7 +108,7 @@ Kết luận, hãy dùng S3 Standard-IA nếu cần **lưu trữ lâu**, **quan 
 
 ### 2.2. S3 One Zone-IA
 
-Đây là một lựa chọn **rẻ** hơn S3 Standard-IA, cũng dùng cho dữ liệu cần **lưu trữ lâu**, **không truy cập nhiều**, nhưng **không quan trọng** và có thể dễ dàng tái tạo hoặc thay thế. Do lớp lưu trữ này chỉ lưu dữ liệu trên 1 AZ, nên chỉ có khả năng phục hồi [AZ Resilience](/2025/11/12/aws_infrastructure/#resilience).
+Đây là một lựa chọn **rẻ** hơn S3 Standard-IA, cũng dùng cho dữ liệu cần **lưu trữ lâu**, **không truy cập nhiều**, nhưng **không quan trọng** và có thể dễ dàng tái tạo hoặc thay thế. Do lớp lưu trữ này chỉ lưu dữ liệu trên 1 AZ, nên chỉ có khả năng phục hồi [AZ Resilience](/2025/11/12/aws_infrastructure#resilience).
 
 Tại `us-east-1` ở thời điểm viết bài, chi phí lưu trữ trên S3 One Zone-IA là **$0.01** mỗi GB mỗi tháng, rẻ hơn 20% so với S3 Standard-IA.
 
