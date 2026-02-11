@@ -123,7 +123,7 @@ Bạn đọc có thể xem tất cả quy tắc [tại đây](https://docs.aws.a
 Một bucket có thể chứa **không giới hạn** số lượng object (mỗi object giới hạn kích thước từ 0 B đến 5 TB). Tại thời điểm viết bài, mặc định mỗi tài khoản có thể tạo tối đa 10,000 bucket, có thể đề nghị tăng thêm.
 
 
-Bucket có cấu trúc **phẳng**, không phân tầng hình cây phức tạp, tức không có các "bucket con" hay "thư mục", các object đều đặt ở cùng cấp ngay trong bucket. Tuy giao diện web của S3 hiển thị bucket giống tổ chức tệp và thư mục (thậm chí còn có nút `Create folder`), xem [phần trên](s3-object), nhưng thực chất việc "tạo thư mục" này là tạo tiền tố cho key của object, mình nhấn mạnh điều này một lần nữa.
+Bucket có cấu trúc **phẳng**, không phân tầng hình cây phức tạp, tức không có các "bucket con" hay "thư mục", các object đều đặt ở cùng cấp ngay trong bucket. Tuy giao diện web của S3 hiển thị bucket giống tổ chức tệp và thư mục (thậm chí còn có nút `Create folder`), xem [phần trên](#s3-object), nhưng thực chất việc "tạo thư mục" này là tạo tiền tố cho key của object, mình nhấn mạnh điều này một lần nữa.
 
 <p>
 <image src="/assets/8_s3/bucket.png" alt="S3 Bucket" style="max-width:70%;height:auto;display:block;margin:0 auto;"/>
