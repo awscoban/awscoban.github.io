@@ -13,7 +13,7 @@ Lấy cảm hứng từ blog [Machine Learning cơ bản](https://machinelearnin
 
 Hy vọng blog có thể giúp những bạn mới bắt đầu tiếp cận nhanh hơn một chút, những bạn chuẩn bị thi chứng chỉ ôn tập dễ hơn một chút, những người đang làm việc với AWS tra cứu thuận tiện hơn một chút, do mình thấy việc các công ty triển khai ứng dụng (một phần hoặc toàn bộ) trên AWS nói riêng và Cloud nói chung sẽ ngày càng phổ biến, đặc biệt khi cần tích hợp AI vào các sản phẩm, do AWS cung cấp sẵn rất nhiều mô hình ngôn ngữ lớn (LLM) cũng như các pipeline đẩy nhanh quá trình phát triển.
 
-Nội dung trong blog *gần như* **không sử dụng AI**. Mình tự lập dàn ý, viết, và tự vẽ hình minh hoạ trong các bài. Sở dĩ nói "gần như" là vì dù các hình minh hoạ kỹ thuật được vẽ tay bằng [draw.io](https://www.drawio.com/), **logo** blog và **ảnh bìa nhóm Facebook** được tạo từ Nano Banana Pro và Grok Imagine 😀.
+Nội dung trong blog *gần như* **không sử dụng AI**. Mình tự lập dàn ý, viết, và tự vẽ hình minh hoạ trong các bài bằng [draw.io](https://www.drawio.com/). Sở dĩ nói "gần như" là vì logo cùng ảnh bìa blog được tạo từ Nano Banana Pro và Grok Imagine 😀.
 
 
 **Nếu bạn muốn trích dẫn lại các bài viết, [vui lòng xem thông tin tại đây](/copyrights/).**
