@@ -50,8 +50,8 @@
 
 
           <nav>
-            <div class="header">Latest</div>
-              {% for post in site.posts limit:200 %}
+            <div class="header">Danh sách Bài viết</div>
+              {% for post in site.posts reversed limit:200 %}
                 <li><a style="text-align: left; color: #074B80"  href="{{ post.url }}">{{ post.title }}</a></li>
               {% endfor %}
             </ul>

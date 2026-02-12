@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Categories
+title: Chủ đề
 ---
 
 <div class="tags-expo">
-  <div class="tags-expo-list">
+  <!-- <div class="tags-expo-list">
     {% for tag in site.categories %}
     <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
     <br>
     {% endfor %}
   </div>
-  <hr/>
+  <hr/> -->
   <div class="tags-expo-section">
     {% for tag in site.categories %}
     <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
