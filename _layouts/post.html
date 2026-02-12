@@ -4,8 +4,6 @@ metadata: true
 style:
  name: post
  embedded: false
-sc_project: 13204566
-sc_security: cf3ea60b
 ---
 
 
@@ -47,10 +45,8 @@ sc_security: cf3ea60b
    {{ content }}
 </div>
 
-<hr> 
-<em>Nếu có câu hỏi, bạn có thể để lại comment trên fanpage, group. Cảm ơn bạn.</em>
-<br>
-</em>
+
+<em>Nếu có câu hỏi, bạn có thể để lại comment trên fanpage hoặc group. Cảm ơn bạn.</em>
 
 <hr>
 
@@ -67,14 +63,23 @@ sc_security: cf3ea60b
 <!-- Add vertical spacing -->
 <div style="height: 100px;"></div>
 
-<!-- disqus comments -->
-{% if page.comments %}
-      <hr>
-   {% include disqus_comments.html %}
-{% endif %}
-
-{% include stat_counter.html %}
-<!-- <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<!-- {% include stat_counter.html %} -->
+ 
+<!-- Default Statcounter code for AWS Co Ban http://awscoban.com -->
+<script type="text/javascript">
+var sc_project=13204566; 
+var sc_invisible=0; 
+var sc_security="cf3ea60b"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+Statcounter" href="https://statcounter.com/" target="_blank"><img
+class="statcounter" src="https://c.statcounter.com/13204566/0/cf3ea60b/0/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
 
 <script type="text/javascript" async
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
