@@ -2,8 +2,6 @@
 layout: post
 title: Về Blog
 permalink: /about/
-sc_project: 11387860
-sc_security: bf94eebb
 ---
 
 Cảm ơn bạn đã ghé thăm blog. Mình là Cuong Nguyen, tác giả của blog này. Mình tốt nghiệp Thạc sỹ ngành Điện và Kỹ thuật Máy tính (Electrical and Computer Engineering) tại Học viện Công nghệ Georgia (*Georgia Institute of Technology*), chuyên về Machine Learning và AI. Hiện mình đang làm kỹ sư phần mềm cho một startup tại Pháp.
