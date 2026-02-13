@@ -69,9 +69,8 @@ Khi đã thuê Reserved Instance, **không thể huỷ bỏ giao dịch này**. 
 
 ## 4. Saving Plan
 
-Đây là phương thức thuê Instance mới hơn, linh hoạt hơn Reserved Instance. Người dùng cam kết trả một mức phí cố định hàng giờ trong thời gian dài (vẫn là 1 hoặc 3 năm), đổi lại được giảm giá so với mức phí On-Demand, khi sử dụng EC2 hoặc các dịch vụ tính toán khác như Fargate (*container*), Lambda (*serverless computing*), SageMaker (Học Máy). Mức phí cố định này áp dụng bất kể người dùng sử dụng loại Instance, hệ điều hành, kích thước, hay Region nào. 
+Đây là phương thức thuê Instance mới hơn, linh hoạt hơn Reserved Instance. Người dùng cam kết trả một mức phí cố định hàng giờ trong thời gian dài (vẫn là 1 hoặc 3 năm), đổi lại được giảm giá so với mức phí On-Demand, khi sử dụng EC2 hoặc các dịch vụ tính toán khác như Fargate (*container*), [Lambda](/2026/01/18/lambda-fundamental) (*serverless computing*), SageMaker (Học Máy). Mức phí cố định này áp dụng bất kể người dùng sử dụng loại Instance, hệ điều hành, kích thước, hay Region nào. 
 <!-- TODO: include link to Fargate -->
-<!-- TODO: include link to Lambda -->
 <!-- TODO: include link to SageMaker -->
 
 Trong thực tế, Saving Plan là một phương án rất đáng cân nhắc để tiết kiệm chi phí. Bạn đọc có thể tìm hiểu thêm qua [tài liệu chính thức của AWS](https://docs.aws.amazon.com/savingsplans/latest/userguide/plan-types.html).

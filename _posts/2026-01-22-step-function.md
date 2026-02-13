@@ -43,8 +43,7 @@ Là một chuỗi các bước xử lý được kích hoạt bằng sự kiện
 <image src="/assets/25_step_func/stepfunctions_sample.png" alt="Step Function Workflow" style="max-width:60%;height:auto;display:block;margin:0 auto;"/>
 </p>
 
-Hình trên mô tả một quy trình khi gọi API qua API Gateway, thông báo kết quả (thành công hoặc lỗi) qua [Simple Notification Service (SNS)](#sns). Mỗi khối là một trạng thái, thực thi các tác vụ tương ứng: gọi API, kiểm tra kết quả, gửi thông báo.
-<!-- TODO: include link to API Gateway -->
+Hình trên mô tả một quy trình khi gọi API qua [API Gateway](/2026/01/28/api-gateway), thông báo kết quả (thành công hoặc lỗi) qua [Simple Notification Service (SNS)](#sns). Mỗi khối là một trạng thái, thực thi các tác vụ tương ứng: gọi API, kiểm tra kết quả, gửi thông báo.
 
 
 Step Function hỗ trợ hai loại quy trình chính:
@@ -149,8 +148,7 @@ Như tên gọi, đây là dịch vụ gửi thông báo trên AWS. SNS hoạt �
 
 Cụ thể, *publisher* gửi tin nhắn đến một **chủ đề** (**_topic_**), SNS sẽ phân phối tin nhắn này đến tất cả subscriber đã đăng ký chủ đề đó. Các *subscriber* có thể là:
 - Người nhận trực tiếp: qua tin nhắn SMS, email, hoặc thông báo trên thiết bị di động (*push notification*).
-- Ứng dụng khác: qua giao thức HTTPS, hoặc các dịch vụ AWS như Lambda, [SQS](/2026/01/25/sqs/), Kinesis Data Firehose, v.v.
-<!-- TODO: include link to Kinesis Data Firehose -->
+- Ứng dụng khác: qua giao thức HTTPS, hoặc các dịch vụ AWS như [Lambda](/2026/01/18/lambda-fundamental), [SQS](/2026/01/25/sqs/), [Kinesis Data Firehose](/2026/01/31/kinesis-glue#kinesis-data-firehose), v.v.
 
 SNS hay được sử dụng trong kiến trúc **Fanout**, khi một tin nhắn nhắn tới một SNS Topic được chuyển tiếp đến nhiều dịch vụ khác nhau để xử lý song song (bất đồng bộ). Ví dụ, có thể thiết kế một hệ thống thương mại điện tử, gửi tin nhắn đến một SNS Topic khi có đơn hàng mới, rồi chuyển tiếp đến các hàng đợi SQS khác nhau ứng với các tác vụ xử lý thanh toán, cập nhật kho hàng, gửi email xác nhận, v.v., cùng lúc. 
 Bạn đọc có thể tìm hiểu chi tiết hơn trong [bài sau](/2026/01/25/sqs#fanout).

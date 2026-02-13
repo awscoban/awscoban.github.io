@@ -79,8 +79,7 @@ Việc sao chép dữ liệu từ DB Instance sang Read Replica là **bất đ�
 
 
 
-Một điểm quan trọng khác là Read Replica **có thể ở Region khác**. Việc sao chép dữ liệu vẫn là bất đồng bộ, thông qua kết nối riêng được AWS thiết lập, không cần dùng VPC Peering để kết nối hai VPC.
-<!-- TODO: include link to VPC Peering Connection -->
+Một điểm quan trọng khác là Read Replica **có thể ở Region khác**. Việc sao chép dữ liệu vẫn là bất đồng bộ, thông qua kết nối riêng được AWS thiết lập, không cần dùng [VPC Peering](/2026/02/08/vpc-advanced#vpc-peering) để kết nối hai VPC.
 Điều này giúp giảm độ trễ khi truy vấn trên toàn cầu, đồng thời việc sao lưu dữ liệu sang Region khác cũng tăng khả năng phục hồi của cơ sở dữ liệu lên [Global Resilience](/2025/11/12/aws_infrastructure#resilience).
 
 
@@ -104,8 +103,7 @@ Các điểm cần phân biệt giữa RDS Multi-AZ và Read Replica được t�
 
 ## 3. RDS Proxy
 
-Mỗi kết nối đến DB Instance sẽ tiêu tốn tài nguyên của DB Instance (bộ nhớ, CPU). Nếu số lượng kết nối đồng thời quá lớn, DB Instance có thể quá tải, hiệu năng giảm sút hoặc thậm chí không chấp nhận kết nối mới. Hơn nữa, việc tạo và huỷ kết nối liên tục cũng làm tăng độ trễ, đặc biệt nếu ứng dụng có thời gian giữ kết nối ngắn, như các ứng dụng serverless chạy trên AWS Lambda (mỗi Lambda Function chỉ chạy trong tối đa 15 phút, nếu mỗi Function mở rồi đóng kết nối liên tục sẽ tiêu tốn nhiều tài nguyên).
-<!-- TODO: include link to  Lambda-->
+Mỗi kết nối đến DB Instance sẽ tiêu tốn tài nguyên của DB Instance (bộ nhớ, CPU). Nếu số lượng kết nối đồng thời quá lớn, DB Instance có thể quá tải, hiệu năng giảm sút hoặc thậm chí không chấp nhận kết nối mới. Hơn nữa, việc tạo và huỷ kết nối liên tục cũng làm tăng độ trễ, đặc biệt nếu ứng dụng có thời gian giữ kết nối ngắn, như các ứng dụng serverless chạy trên AWS [Lambda](/2026/01/18/lambda-fundamental) (mỗi Lambda Function chỉ chạy trong tối đa 15 phút, nếu mỗi Function mở rồi đóng kết nối liên tục sẽ tiêu tốn nhiều tài nguyên).
 
 <p>
 <image src="/assets/20_rds_multi_az/rds-proxy.png" alt="RDS Proxy" style="max-width:80%;height:auto;display:block;margin:0 auto;"/>

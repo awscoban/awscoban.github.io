@@ -54,8 +54,7 @@ Các dịch vụ AWS cung cấp sẵn nhiều metric mặc định, ngoài ra ng
 <a name = "namespace"></a>
 
 #### Namespace
-Mỗi dịch vụ AWS có một namespace riêng để chứa metric, ví dụ `AWS/EC2` cho EC2, `AWS/RDS` cho RDS (Relational Database Service, một dịch vụ cơ sở dữ liệu SQL), v.v. Tên của namespace có thể tuỳ chỉnh, nên đặt tên để dễ nhận biết.
-<!-- TODO: include link to RDS -->
+Mỗi dịch vụ AWS có một namespace riêng để chứa metric, ví dụ `AWS/EC2` cho EC2, `AWS/RDS` cho [RDS](/2026/01/08/rds-fundamental) (*Relational Database Service*, một dịch vụ cơ sở dữ liệu SQL), v.v. Tên của namespace có thể tuỳ chỉnh, nên đặt tên để dễ nhận biết.
 
 #### Metric
 
@@ -139,9 +138,8 @@ Là các phép toán áp dụng lên tập điểm dữ liệu của metric tron
 <a name = "alarm">
 
 #### Alarm
-Cảnh báo dựa theo ngưỡng của metric. Alarm theo dõi giá trị metric và hành động (gọi các dịch vụ AWS khác) nếu giá trị vượt qua một ngưỡng đã định. Ví dụ, có thể tạo alarm để thông báo qua Simple Notification Service (SNS) nếu CPU Utilization của một EC2 Instance vượt quá 80% trong 5 phút liên tục, hoặc tự động thêm Instance thông qua Auto Scaling. Việc này giúp tự động hoá việc phản ứng với các sự kiện theo trạng thái của tài nguyên.
+Cảnh báo dựa theo ngưỡng của metric. Alarm theo dõi giá trị metric và hành động (gọi các dịch vụ AWS khác) nếu giá trị vượt qua một ngưỡng đã định. Ví dụ, có thể tạo alarm để thông báo qua [Simple Notification Service (SNS)](/2026/01/22/step-function#sns) nếu CPU Utilization của một EC2 Instance vượt quá 80% trong 5 phút liên tục, hoặc tự động thêm Instance thông qua [Auto Scaling](/2026/02/02/ec2-autoscaling). Việc này giúp tự động hoá việc phản ứng với các sự kiện theo trạng thái của tài nguyên.
 
-<!-- TODO: include link to SNS, Auto Scaling -->
 
 <a name = "cloudwatch-dashboard"></a>
 
@@ -183,8 +181,7 @@ Là một bản ghi đơn lẻ trong CloudWatch Logs, chỉ chứa **timestamp**
 
 #### Log Stream 
 
-Là chuỗi các log event liên quan, ứng với một nguồn cụ thể, như một EC2 Instance, Lambda Function, v.v. 
-<!-- TODO: include link to Lambda -->
+Là chuỗi các log event liên quan, ứng với một nguồn cụ thể, như [EC2 Instance](/2025/12/16/ec2-fundamental), [Lambda Function](/2026/01/18/lambda-fundamental#function), v.v. 
 
 <a name = "log-group"></a>
 
@@ -216,9 +213,9 @@ Filter pattern này khớp với cấu trúc của log (như `Message` ứng v�
 
 #### Subscription Filter
 
-Subscription Filter cho phép gửi log từ CloudWatch Logs đến các dịch vụ khác như Lambda, Kinesis Data Streams, để xử lý và phân tích thêm.
+Subscription Filter cho phép gửi log từ CloudWatch Logs đến các dịch vụ khác như [Lambda](/2026/01/18/lambda-fundamental), [Kinesis Data Streams](/2026/01/31/kinesis-glue#kinesis-data-streams), để xử lý và phân tích thêm.
 Cũng có thể sử dụng tính năng này để tập trung lưu trữ log tại một vị trí, trong trường hợp cần tập trung log từ nhiều tài khoản. Bạn đọc có thể tìm hiểu thêm [tại đây](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html).
-<!-- TODO: include link to Kinesis Data Streams, Lambda -->
+
 
 <a name = "logs-insights"></a>
 

@@ -11,7 +11,7 @@ summary: "Auto Scaling (tạm dịch: Tự động Mở rộng) là dịch vụ 
 ---
 
 
-Auto Scaling (tạm dịch: Tự động Mở rộng) là dịch vụ giúp tự động điều chỉnh số lượng EC2 Instance theo các chính sách đã định nghĩa trước. Mục tiêu là đảm bảo ứng dụng luôn có đủ tài nguyên để đáp ứng nhu cầu, đồng thời tối ưu chi phí bằng cách giảm bớt tài nguyên khi không cần thiết.
+Auto Scaling (tạm dịch: *Tự động Mở rộng*) là dịch vụ giúp tự động điều chỉnh số lượng EC2 Instance theo các chính sách đã định nghĩa trước. Mục tiêu là đảm bảo ứng dụng luôn có đủ tài nguyên để đáp ứng nhu cầu, đồng thời tối ưu chi phí bằng cách giảm bớt tài nguyên khi không cần thiết.
 
 
 ## Trong bài này:
