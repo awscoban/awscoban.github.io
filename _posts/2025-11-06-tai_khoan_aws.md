@@ -7,10 +7,10 @@ permalink: /2025/11/06/aws-account
 img: /assets/1_taikhoanaws/overview.png
 categories: [Account & Organization]
 tags: [Account & Organization]
-summary: Một cách ngắn gọn, có thể hiểu tài khoản AWS như một "container" chứa các thực thể được quản lý bởi tài khoản (IAM User, IAM Group, IAM Role)
+summary: "Blog này trình bày kiến thức cơ bản về AWS. Để làm việc với AWS, tất nhiên bạn cần có tài khoản. Bài này mình sẽ giới thiệu các khái niệm, thành phần quan trọng trong một tài khoản AWS."
 ---
 
-Để làm việc với AWS, tất nhiên bạn cần có một tài khoản. Bài này mình sẽ giới thiệu các khái niệm, thành phần quan trọng của một tài khoản AWS.
+Để làm việc với AWS, tất nhiên bạn cần có một tài khoản. Bài này mình sẽ giới thiệu các khái niệm, thành phần quan trọng trong một tài khoản AWS.
 
 ## Trong bài này:
 
