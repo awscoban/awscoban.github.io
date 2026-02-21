@@ -1,0 +1,40 @@
+- name: Infrastructure
+- name: Networking
+  subcategories:
+    - VPC
+    - Route 53
+- name: Storage
+  subcategories:
+    - S3
+    - EFS
+    - EBS
+- name: Compute
+  subcategories:
+    - EC2
+    - Lambda
+- name: Database
+  subcategories:
+    - RDS
+    - Aurora
+    - DynamoDB
+- name: Serverless
+  subcategories:
+    - Lambda
+- name: Security
+  subcategories:
+    - IAM
+    - KMS
+
+- name: IaC
+  subcategories:
+    - CloudFormation
+
+- name: CDN
+  subcategories:
+    - CloudFront
+
+- name: Monitoring
+
+- name: High Availability
+
+- name: Account & Organization

@@ -4,8 +4,8 @@ title: "21. Bảo mật trong RDS"
 title2: "Bảo mật trong RDS"
 date: 2026-01-12
 permalink: /2026/01/12/rds-security
-categories: [RDS, Database]
-tags: [RDS, Database]
+categories: [RDS, Database, Security]
+tags: [RDS, Database, Security]
 img: /assets/21_rds_security/rds-iam-auth.png
 summary: "Trong bài này, mình sẽ trình bày hai vấn đề bảo mật quan trọng trong RDS: xác thực quyền truy cập CSDL trong DB Instance dùng IAM, và mã hoá dữ liệu trong RDS, bao gồm cả mã hoá khi truyền tải và mã hoá khi lưu trữ."
 ---
