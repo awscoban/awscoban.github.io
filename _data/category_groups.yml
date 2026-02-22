@@ -1,3 +1,4 @@
+- name: Account & Organization
 - name: Infrastructure
 - name: Networking
   subcategories:
@@ -37,4 +38,3 @@
 
 - name: High Availability
 
-- name: Account & Organization
