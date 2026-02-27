@@ -80,6 +80,7 @@ Các bảng này có thể liên kết với nhau thông qua các khóa chính v
 ### 1.2. NoSQL
 
 Là thuật ngữ chung để chỉ các cơ sở dữ liệu không sử dụng mô hình quan hệ truyền thống. NoSQL thực chất bao gồm nhiều loại cơ sở dữ liệu khác nhau, như **Document Store** (MongoDB, CouchDB), **Key-Value Store** (Redis, DynamoDB), **Column Family Store** (Cassandra, HBase), và **Graph Database** (Neo4j, Amazon Neptune).
+<!-- TODO: include link to DynamoDB--> 
 
 Điểm chính để phân biệt với SQL là **NoSQL không có cấu trúc dữ liệu chặt chẽ**. Dữ liệu trong NoSQL có thể được lưu trữ dưới nhiều định dạng khác nhau, như JSON, khóa-giá trị, bảng cột, đồ thị, v.v.. Điều này mang lại sự linh hoạt cao hơn trong việc lưu trữ và truy vấn dữ liệu, phù hợp cho các ứng dụng có dữ liệu phi cấu trúc hoặc bán cấu trúc.
 
