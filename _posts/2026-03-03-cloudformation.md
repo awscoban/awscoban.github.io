@@ -383,4 +383,4 @@ Outputs:
 5. [Conditions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/conditions-section-structure.html)
 6. [CloudFormation Best Practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html)
 
-Bài tiếp theo, ta sẽ tìm hiểu các đoạn mã bổ trợ (*helper script*) của CloudFormation.
+Bài tiếp theo, ta sẽ tìm hiểu các đoạn mã bổ trợ (*helper script*) của CloudFormation, như `cfn-init`, `cfn-signal`, và `cfn-hup`.
