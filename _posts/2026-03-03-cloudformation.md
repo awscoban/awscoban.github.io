@@ -359,7 +359,7 @@ Resources:
         InstanceType: t2.micro
 ```
 
-Ngoài tài nguyên, có thể gán Condition cho Outputs, để chỉ đưa ra Output khi điều kiện đúng. Ví dụ:
+Ngoài tài nguyên, có thể gán Condition cho Output, để chỉ đưa ra Output khi điều kiện đúng. Ví dụ, dưới đây ta chỉ xuất ra `ProdInstanceId` khi Stack được tạo cho môi trường Production:
 
 ```yaml
 Outputs:
