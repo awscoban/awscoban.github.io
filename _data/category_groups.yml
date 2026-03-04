@@ -26,6 +26,10 @@
     - IAM
     - KMS
 
+- name: Caching
+
+- name: Hybrid Environment
+
 - name: IaC
   subcategories:
     - CloudFormation
@@ -34,7 +38,7 @@
   subcategories:
     - CloudFront
 
-- name: Monitoring
-
 - name: High Availability
+
+- name: Monitoring
 
