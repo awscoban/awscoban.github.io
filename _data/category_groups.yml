@@ -9,6 +9,8 @@
     - S3
     - EFS
     - EBS
+    - Hybrid
+
 - name: Compute
   subcategories:
     - EC2
@@ -28,7 +30,7 @@
 
 - name: Caching
 
-- name: Hybrid Environment
+- name: Hybrid
 
 - name: IaC
   subcategories:
