@@ -4,7 +4,7 @@ title: Về Blog
 permalink: /about/
 ---
 
-Cảm ơn bạn đã ghé thăm blog. Mình là Cuong Nguyen, tác giả của blog này. Mình tốt nghiệp Thạc sỹ ngành Điện và Kỹ thuật Máy tính (Electrical and Computer Engineering) tại Học viện Công nghệ Georgia (*Georgia Institute of Technology*), chuyên về Machine Learning và AI. Hiện mình đang làm kỹ sư phần mềm cho một startup tại Pháp.
+Cảm ơn bạn đã ghé thăm blog. Mình là Cuong Nguyen, kỹ sư phần mềm và tác giả của blog này. Mình tốt nghiệp Thạc sỹ ngành Điện và Kỹ thuật Máy tính (Electrical and Computer Engineering) tại Học viện Công nghệ Georgia (*Georgia Institute of Technology*), chuyên về Machine Learning và AI.
 
 Trong quá trình làm việc, mình tiếp xúc với AWS, đặc biệt là các dịch vụ AI/ML như SageMaker, Textract. Sau đó tìm hiểu sâu thêm về hạ tầng và các dịch vụ cốt lõi khác, rồi thi lấy hai chứng chỉ [AWS Certified Solutions Architect - Associate](https://www.credly.com/badges/0fd326d8-fc91-4b3e-8c4e-ff100892a897/public_url) và [AWS Certified DevOps Engineer - Professional](https://www.credly.com/badges/351019ca-d6ee-470f-84a9-a13ab72027c6/public_url). 
 
