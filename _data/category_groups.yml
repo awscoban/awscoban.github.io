@@ -4,25 +4,31 @@
   subcategories:
     - VPC
     - Route 53
+
 - name: Storage
   subcategories:
     - S3
-    - EFS
     - EBS
+    - EFS
+    - FSx
     - Hybrid
 
 - name: Compute
   subcategories:
     - EC2
     - Lambda
+    - ECS
+
 - name: Database
   subcategories:
     - RDS
     - Aurora
     - DynamoDB
+
 - name: Serverless
   subcategories:
     - Lambda
+    
 - name: Security
   subcategories:
     - IAM
@@ -44,3 +50,4 @@
 
 - name: Monitoring
 
+- name: Machine Learning
