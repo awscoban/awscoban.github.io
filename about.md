@@ -26,5 +26,16 @@ Nội dung trong blog *gần như* **không sử dụng AI**. Mình tự lập d
 [**Forum AWS Cơ Bản**](https://www.facebook.com/groups/1222885342682239/).
 
 
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+### Đánh giá của Độc giả
+
+<p>
+<image src="/assets/reviews/review1.png" alt="Review 1" style="max-width:80%;height:auto;display:block;margin:0 auto;"/>
+</p>
+
+<p>
+<image src="/assets/reviews/review2.png" alt="Review 2" style="max-width:80%;height:auto;display:block;margin:0 auto;"/>
+</p>
+
+<p>
+<image src="/assets/reviews/review3.png" alt="Review 3" style="max-width:80%;height:auto;display:block;margin:0 auto;"/>
+</p>
