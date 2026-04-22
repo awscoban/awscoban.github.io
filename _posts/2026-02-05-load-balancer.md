@@ -52,8 +52,7 @@ Tài nguyên đích của ELB thường gặp nhất là EC2 Instance, đặc bi
 Về kết nối, AWS hỗ trợ hai chế độ:
 
 - **Internet-facing**: ELB có public IP, có thể truy cập từ Internet. Có thể phân phối tải đến tài nguyên nằm trong **cả public và private** [subnet](/2025/11/13/vpc#vpc-subnet).
-- **Internal**: ELB chỉ có private IP, chỉ truy cập được từ trong VPC hoặc qua VPN/Direct Connect từ on-premise. Chỉ phân phối tải đến tài nguyên nằm trong **private subnet**.
-<!-- TODO: include link to VPN, Direct Connect -->
+- **Internal**: ELB chỉ có private IP, chỉ truy cập được từ trong VPC hoặc qua [VPN](/2026/04/12/vpn)/[Direct Connect](/2026/04/18/direct-connect) từ on-premise. Chỉ phân phối tải đến tài nguyên nằm trong **private subnet**.
 
 Cả hai loại ELB này đều kết nối với tài nguyên đích bằng private IP.
 

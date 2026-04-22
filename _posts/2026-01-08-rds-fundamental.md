@@ -121,9 +121,8 @@ Các *yêu cầu đặc biệt* đề cập ở trên khi cần tự cài đặt
 
 Mặc định, mỗi RDS DB Instance sẽ nằm trong **một AZ**. Tốt nhất nên tạo DB Instance trong một VPC và subnet, như đã đề cập trong [kiến trúc ứng dụng đa tầng](/2025/11/20/design-vpc#multi-tier-design), sau đó thêm [Security Group](/2025/11/27/sg-nacl#sg) liên quan để cho phép các EC2 Instance trong Security Group được kết nối đến DB Instance. RDS sẽ cung cấp một **endpoint** (địa chỉ IP hoặc DNS) và cổng (port) để kết nối. 
 
-DB Instance cũng có thể kết nối từ mạng doanh nghiệp thông qua Direct Connect hoặc VPN.
+DB Instance cũng có thể kết nối từ mạng doanh nghiệp thông qua [Direct Connect](/2026/04/18/direct-connect) hoặc [VPN](/2026/04/12/vpn).
 Ngoài ra, RDS cũng hỗ trợ **public access**, tức cung cấp địa chỉ IP công khai cho DB Instance để cho phép kết nối từ bên ngoài VPC. Tuy nhiên, người dùng cần cân nhắc kỹ nếu muốn sử dụng tính năng này vì lý do bảo mật.
-<!-- TODO: include link to DX, VPN -->
 
 Cấu hình mặc định đơn AZ tất nhiên chỉ có khả năng phục hồi [AZ Resilience](/2025/11/12/aws_infrastructure#resilience). Để tăng tính khả dụng, có thể cấu hình [Multi-AZ](/2026/01/10/rds-multi-az#multi-az-deployment) cho DB Instance, với một hoặc hai *Standby Instance* ở AZ khác sẵn sàng thay thế nếu DB Instance chính xảy ra vấn đề. Thiết lập này sẽ được thảo luận kỹ hơn trong bài tiếp theo.
 
