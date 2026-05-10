@@ -21,6 +21,7 @@ Bài này tập trung vào các khía cạnh bảo mật trong CloudFront, bao g
     - [1.2. HTTPS trong CloudFront](#https-cloudfront)
 - [2. Origin Access Control - OAC](#oac)
 - [3. Signed URL và Signed Cookie](#signed-url-cookie)
+- [4. Câu hỏi Ôn tập](#quiz)
 - [Tài liệu tham khảo](#reference)
 
 
@@ -190,6 +191,11 @@ Nhiều dịch vụ Internet cung cấp nội dung trả phí dành riêng cho m
 5. Người dùng gửi yêu cầu tới CloudFront kèm theo Signed URL hoặc Signed Cookie. CloudFront xác thực chữ ký số bằng public key đã chỉ định trong Distribution. Nếu hợp lệ, CloudFront lấy dữ liệu từ Origin và trả về cho người dùng.
 
 
+<a name = "quiz"></a>
+
+## 4. Câu hỏi Ôn tập
+
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawscoban%2Fposts%2Fpfbid0YaLxQSfwDSvwjsyZBrynemJYbm1iBTx2Zdir9jeJp4nomccKxP9nxGhogTFXSw7zl&show_text=true&width=500" width="500" height="575" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
 
 
