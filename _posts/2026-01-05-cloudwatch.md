@@ -242,7 +242,7 @@ CloudWatch Agent là một [phần mềm mã nguồn mở](https://github.com/aw
 
 - Thêm 2 policy, cụ thể là [`AmazonSSMManagedInstanceCore`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSSMManagedInstanceCore.html) và [`CloudWatchAgentServerPolicy`](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/CloudWatchAgentServerPolicy.html), vào [IAM Role](/2025/11/07/iam#iam-role) gắn với EC2 Instance. 2 policy cung cấp các quyền cần thiết để thu thập dữ liệu trên EC2 và gửi đến CloudWatch.
 - Tải phần mềm CloudWatch Agent về EC2 Instance. Có thể sử dụng AWS Systems Manager (SSM) để tự động hoá việc này.
-<!-- TODO: include link to SSM -->
+
 - Cấu hình CloudWatch Agent bằng [file cấu hình](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-Configuration-File-Details.html), xác định các metric cần thu thập. Với log, mặc định mỗi log file sẽ được ghi trong một Log Group riêng. Ví dụ, file cấu hình sau thu thập các metric về CPU, bộ nhớ, ổ đĩa, và log từ hai tệp hệ thống `/var/log/messages` và `/var/log/syslog`, gửi đến các Log Group tương ứng trong CloudWatch Logs. Người dùng có thể tự ghi log ứng dụng của mình vào các tệp khác, và cấu hình CloudWatch Agent để thu thập chúng.
 
 ```json

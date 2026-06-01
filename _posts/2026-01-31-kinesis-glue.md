@@ -56,7 +56,6 @@ Nghe khá quen, phải không? Cơ chế này nghe rất giống [SQS](/2026/01/
 
 
 Consumer của một Stream thường là một cụm [EC2](/2025/12/16/ec2-fundamental), đầu ra có thể được gửi đến các dịch vụ khác như [S3](/2025/11/30/s3-fundamental), [Lambda](/2026/01/18/lambda-fundamental), Redshift, v.v, để lưu trữ hoặc xử lý tiếp.
-<!-- TODO: include link to Redshift -->
 
 
 <a name = "kinesis-data-firehose"></a>
@@ -64,7 +63,6 @@ Consumer của một Stream thường là một cụm [EC2](/2025/12/16/ec2-fund
 ### 1.2. Kinesis Data Firehose
 
 Đây là dịch vụ giúp **chuyển tiếp** dữ liệu streaming theo thời gian thực tới các dịch vụ đích như S3, Redshift, OpenSearch, hoặc các endpoint HTTP/HTTPS bên ngoài. Người dùng cấu hình producer gửi dữ liệu đến Firehose, Firehose tự động chuyển đổi dữ liệu (nếu cần, sử dụng Lambda) rồi chuyển tiếp đến đích.
-<!-- TODO: include link to OpenSearch -->
 
 <p>
 <image src="/assets/28_kinesis_glue/kinesis-firehose.png" alt="Kinesis Data Firehose" style="max-width:90%;height:auto;display:block;margin:0 auto;"/>
@@ -77,8 +75,7 @@ Firehose thường được sử dụng để xây dựng data lake, data wareho
 
 ### 1.3. Kinesis Video Streams
 
-Kinesis Video Streams (KVS) là ứng dụng giúp truyền dữ liệu video trực tiếp từ camera lên AWS. Dữ liệu này sau đó có thể được xem trực tiếp, hoặc đưa vào các ứng dụng AI như Amazon Rekognition hoặc AWS SageMaker để phân tích theo thời gian thực, nhận diện khuôn mặt, phát hiện đối tượng, phân tích hành vi, v.v.
-<!-- TODO: include link to Rekognition, SageMaker  -->
+Kinesis Video Streams (KVS) là ứng dụng giúp truyền dữ liệu video trực tiếp từ camera lên AWS. Dữ liệu này sau đó có thể được xem trực tiếp, hoặc đưa vào các ứng dụng AI như [Amazon Rekognition](/2026/06/06/ml-services#rekognition) hoặc AWS SageMaker để phân tích theo thời gian thực, nhận diện khuôn mặt, phát hiện đối tượng, phân tích hành vi, v.v.
 
 <p>
 <image src="/assets/28_kinesis_glue/kinesis-video-streams.png" alt="Kinesis Video Streams" style="max-width:90%;height:auto;display:block;margin:0 auto;"/>
@@ -104,7 +101,6 @@ Glue là dịch vụ ETL (Extract - Transform - Load) không máy chủ của AW
 - **Crawler**: là các chương trình tự động quét các nguồn dữ liệu, suy luận cấu trúc dữ liệu, thu thập metadata và cập nhật vào Data Catalog.
 - **Glue Job**: thành phần quan trọng nhất, là các tác vụ ETL thực tế. Người dùng định nghĩa các bước thu thập, biến đổi dữ liệu và đưa về kho chứa đích.
 - **Trigger**: tác nhân khởi chạy Glue Job, có thể chạy theo nhu cầu, theo lịch trình định sẵn, hoặc dựa trên các sự kiện. Thường tích hợp với Event Bridge.
-<!-- TODO: include link to Event Bridge  -->
 
 Thông thường quy trình làm việc với Glue như sau:
 

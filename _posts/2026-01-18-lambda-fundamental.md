@@ -169,7 +169,7 @@ Trong đó, chỉ rõ `--invocation-type` của kích hoạt đồng bộ là `R
 </p>
 
 Nhiều dịch vụ AWS như [S3](/2025/11/30/s3-fundamental), [SNS](/2026/01/22/step-function#sns), Events Bridge kích hoạt Lambda Function theo cách này. Khi kích hoạt bất đồng bộ, người gọi sẽ **không chờ** function hoàn thành. Thay vào đó, quá trình diễn ra như sau:
-<!-- TODO: include link to Events Bridge-->
+
 1. Người dùng kích hoạt bất đồng bộ, Lambda nhận sự kiện đầu vào và xếp vào hàng đợi (*queue*).
 2. Lambda lấy sự kiện từ hàng đợi (*polling*).
 3. Lambda thực thi function với sự kiện đầu vào, **thử lại nếu gặp lỗi** từ 0 đến 2 lần tuỳ theo [cài đặt của người dùng](https://docs.aws.amazon.com/lambda/latest/dg/invocation-async-configuring.html).

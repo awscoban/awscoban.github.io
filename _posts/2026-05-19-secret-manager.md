@@ -26,7 +26,6 @@ Bài này giới thiệu 2 dịch vụ giúp lưu trữ bí mật và tham số 
 ## 1. System Manager Parameter Store
 
 System Manager là một hệ thống quản lý các tác vụ trên AWS. Một dịch vụ hay dùng trong System Manager là **Parameter Store**, dùng để lưu trữ các tham số cấu hình (**configuration parameters**) và các loại bí mật (**secret**) như mật khẩu, API key, v.v.
-<!-- TODO: include link to System Manager-->
 
 Parameter Store lưu tham số dưới dạng các cặp khoá-giá trị (**key-value**), hỗ trợ 3 loại dữ liệu:
 - **String**: chuỗi văn bản đơn giản, như tên ứng dụng, URL, v.v.

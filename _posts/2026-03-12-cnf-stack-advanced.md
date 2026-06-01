@@ -266,8 +266,7 @@ CloudFormation StackSet là công cụ giúp triển khai và quản lý Stack t
 
 StackSet sẽ hữu ích khi cần:
 
-- Thiết lập hạ tầng dùng chung cho nhiều tài khoản, như [VPC](/2025/11/13/vpc), [IAM Role](/2025/11/07/iam#iam-role), CloudTrail, AWS Config, v.v.
-<!-- TODO: include link to CloudTrail, AWS Config-->
+- Thiết lập hạ tầng dùng chung cho nhiều tài khoản, như [VPC](/2025/11/13/vpc), [IAM Role](/2025/11/07/iam#iam-role), [CloudTrail](/2026/05/25/infra-management#cloudtrail), [AWS Config](/2026/05/25/infra-management#config), v.v.
 - Đảm bảo tính nhất quán của hạ tầng trên nhiều tài khoản và Region, như khi triển khai ứng dụng với nhiều bản sao ở các Region khác nhau.
 
 

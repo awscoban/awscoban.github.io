@@ -34,8 +34,7 @@ Bài này giới thiệu các dịch vụ và công cụ của AWS để di chuy
 
 Ở phía nguồn, DataSync hỗ trợ hầu hết các định dạng lưu trữ: NFS cho Linux, SMB cho Windows, Hadoop Distributed File Systems (HDFS), và các [object storage](/2025/11/30/s3-fundamental#storage-comparison) ở hạ tầng nội bộ. 
 
-Ở phía đích, tất nhiên DataSync sẽ hỗ trợ các dịch vụ lưu trữ của AWS, gồm [S3](/2025/11/30/s3-fundamental), [EFS](/2025/12/24/efs), FSx.
-<!-- TODO: include link to FSx-->
+Ở phía đích, tất nhiên DataSync sẽ hỗ trợ các dịch vụ lưu trữ của AWS, gồm [S3](/2025/11/30/s3-fundamental), [EFS](/2025/12/24/efs), [FSx](/2026/05/07/fsx).
 
 
 Các trường hợp sử dụng phổ biến:

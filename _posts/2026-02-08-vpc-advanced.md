@@ -73,8 +73,7 @@ Và nếu ứng dụng của ta chạy trong VPC đó, có thể truy cập Clou
 
 ## 2. VPC Gateway Endpoint
 
-Gateway Endpoint ra mắt trước Private Link, không dùng ENI và DNS như Private Link, mà hoạt động như một **đường hầm** nối từ VPC đến dịch vụ đích, sử dụng [bảng định tuyến](/2025/11/25/vpc-routing#route-table) để kết nối ra bên ngoài VPC. Gateway Endpoint **chỉ hỗ trợ kết nối đến [S3](/2025/11/30/s3-fundamental) và DynamoDB**.
-<!-- TODO: include link to DynamoDB -->
+Gateway Endpoint ra mắt trước Private Link, không dùng ENI và DNS như Private Link, mà hoạt động như một **đường hầm** nối từ VPC đến dịch vụ đích, sử dụng [bảng định tuyến](/2025/11/25/vpc-routing#route-table) để kết nối ra bên ngoài VPC. Gateway Endpoint **chỉ hỗ trợ kết nối đến [S3](/2025/11/30/s3-fundamental) và [DynamoDB](/2026/03/18/dynamodb)**.
 
 <p>
 <image src="/assets/31_vpc_advanced/gateway-endpoint.png" alt="Gateway Endpoint" style="max-width:80%;height:auto;display:block;margin:0 auto;"/>

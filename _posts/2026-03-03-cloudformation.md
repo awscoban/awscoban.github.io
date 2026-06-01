@@ -286,7 +286,6 @@ Outputs:
 Các trường chính:
 - `Value`: giá trị đầu ra, có thể là một chuỗi tĩnh, thuộc tính của tài nguyên, hoặc tham số.
 - `Export`: nếu muốn cho phép Stack khác sử dụng đầu ra này, cần đặt giá trị `Name` trong trường `Export`. Đây là cách để tạo [cross-stack reference](/2026/03/12/cnf-stack-advanced#cross-stack-reference) giữa các Stack, giúp chia hệ thống thành nhiều module nhỏ để dễ quản lý.
-<!-- TODO: include link to cross stack reference-->
 
 
 <a name = "mappings"></a>
