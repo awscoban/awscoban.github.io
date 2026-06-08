@@ -23,6 +23,7 @@ Trong [mô hình chia sẻ trách nhiệm](/2025/11/12/aws_infrastructure#shared
 - [4. GuardDuty - Phát hiện Nguy cơ](#guardduty)
 - [5. Inspector - Phát hiện Lỗ hổng Bảo mật](#inspector)
 - [6. Trusted Advisor - Khuyến nghị](#trusted-advisor)
+- [7. Câu hỏi Ôn tập](#quiz)
 - [Tài liệu tham khảo](#reference)
 
 
@@ -141,8 +142,12 @@ Trusted Advisor **quét toàn bộ tài khoản** và cung cấp các **check** 
 - **Khả năng chịu lỗi** ([Fault Tolerance](/2025/11/12/aws_infrastructure#ft)): các khuyến nghị để tăng tính khả dụng và khả năng chịu lỗi của hạ tầng.
 - **Giới hạn dịch vụ**: cảnh báo nếu đang sử dụng gần đến giới hạn AWS cho phép của một dịch vụ nào đó.
 
+<a name = "quiz"></a>
+
+## 7. Câu hỏi Ôn tập
 
 
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fawscoban%2Fposts%2Fpfbid036sRVPg36C7mQiEbjSLaYFoX2iGRNrjBasvxir7e1QQDAQ3ZR4ssGXoQWxnPPzozul&show_text=true&width=500" width="500" height="515" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
 
 
